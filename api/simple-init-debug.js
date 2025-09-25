@@ -37,10 +37,14 @@ export default async function handler(req, res) {
     if (existingUsers.rows[0].count === '0') {
       console.log('No users found, creating admin user');
       
-      // Create admin password hash
+      // Use a specific, known password hash for 'admin123'
       const plainPassword = 'admin123';
-      const adminPasswordHash = await bcrypt.hash(plainPassword, 10);
-      console.log(`Generated hash for '${plainPassword}': ${adminPasswordHash}`);
+      const adminPasswordHash = '$2a$10$JcmUQDnXBCwDOpk1Vt9gveYeKxZ0Zp5eKEDZUB.5NNMOUYUf/Uwx6';
+      console.log(`Using fixed hash for '${plainPassword}': ${adminPasswordHash}`);
+      
+      // Verify the hash works with the password
+      const verifyHash = await bcrypt.compare(plainPassword, adminPasswordHash);
+      console.log(`Hash verification result: ${verifyHash}`);
       
       // Insert admin user
       await sql`
