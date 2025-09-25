@@ -5,5 +5,8 @@
   "routes": [
     { "handle": "filesystem" },
     { "src": "/[^.]+", "dest": "/", "status": 200 }
-  ]
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite"
 }
