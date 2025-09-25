@@ -1,12 +1,11 @@
 {
-  "rewrites": [
-    { "source": "/api/:path*", "destination": "/src/pages/api/:path*" }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/[^.]+", "dest": "/", "status": 200 }
-  ],
-  "buildCommand": "npm run build",
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install",
   "outputDirectory": "dist",
-  "framework": "vite"
+  "framework": "vite",
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 10
+    }
+  }
 }
