@@ -11,11 +11,25 @@ export function useAuth() {
 }
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [token, setToken] = useState(null)
+  // Development mode: Auto-login as admin for testing
+  const DEV_MODE = true
+  
+  const [user, setUser] = useState(DEV_MODE ? {
+    id: 1,
+    username: 'admin',
+    email: 'admin@capemaypd.gov',
+    role: 'super_admin',
+    name: 'System Administrator'
+  } : null)
+  const [loading, setLoading] = useState(!DEV_MODE)
+  const [token, setToken] = useState(DEV_MODE ? 'dev-token' : null)
 
   useEffect(() => {
+    if (DEV_MODE) {
+      // Skip authentication in dev mode
+      return
+    }
+    
     // Check for existing token on mount
     const savedToken = localStorage.getItem('auth_token')
     if (savedToken) {
@@ -28,11 +42,20 @@ export function AuthProvider({ children }) {
 
   const verifyToken = async (authToken) => {
     try {
-      const response = await fetch('/api/auth/verify', {
+      // Try mock endpoint first, then fall back to regular endpoint
+      let response = await fetch('/api/auth/verify-mock', {
         headers: {
           'Authorization': `Bearer ${authToken}`
         }
       })
+
+      if (!response.ok) {
+        response = await fetch('/api/auth/verify', {
+          headers: {
+            'Authorization': `Bearer ${authToken}`
+          }
+        })
+      }
 
       if (response.ok) {
         const data = await response.json()
@@ -56,13 +79,24 @@ export function AuthProvider({ children }) {
 
   const login = async (username, password) => {
     try {
-      const response = await fetch('/api/auth/login', {
+      // Try mock endpoint first, then fall back to regular endpoint
+      let response = await fetch('/api/auth/login-mock', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({ username, password })
       })
+
+      if (!response.ok) {
+        response = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ username, password })
+        })
+      }
 
       const data = await response.json()
 

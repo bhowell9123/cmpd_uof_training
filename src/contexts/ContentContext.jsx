@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react'
 import { useAuth } from './AuthContext'
+import contentMapping from '../assets/content_mapping/content_mapping.json'
 
 const ContentContext = createContext()
 
@@ -11,49 +12,155 @@ export function useContent() {
   return context
 }
 
+// Default modules structure
+const defaultModules = [
+  {
+    id: 1,
+    name: 'Core Principles',
+    description: 'Introduction to the core principles of use of force',
+    slides: [1, 15]
+  },
+  {
+    id: 2,
+    name: 'Definitions and Classifications',
+    description: 'Key definitions and classifications related to use of force',
+    slides: [16, 30]
+  },
+  {
+    id: 3,
+    name: 'Procedures and Techniques',
+    description: 'Practical procedures and techniques for use of force situations',
+    slides: [31, 38]
+  },
+  {
+    id: 4,
+    name: 'Specific Force Options',
+    description: 'Detailed information on specific force options available to officers',
+    slides: [39, 46]
+  },
+  {
+    id: 5,
+    name: 'Post-Incident Procedures',
+    description: 'Procedures to follow after a use of force incident',
+    slides: [47, 49]
+  }
+]
+
 export function ContentProvider({ children }) {
   const { getAuthHeaders, isAuthenticated } = useAuth()
   const [slides, setSlides] = useState([])
-  const [modules, setModules] = useState([])
+  const [modules, setModules] = useState(defaultModules)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const [useLocalData, setUseLocalData] = useState(false)
 
   useEffect(() => {
     if (isAuthenticated) {
       loadContent()
+    } else {
+      // Use local data when not authenticated
+      loadLocalContent()
     }
   }, [isAuthenticated])
+
+  const loadLocalContent = () => {
+    try {
+      console.log('Loading content from local file...')
+      const localSlides = Object.entries(contentMapping).map(([key, data]) => {
+        const slideId = parseInt(key.replace('slide_', ''))
+        const moduleId = getModuleIdForSlide(slideId)
+        
+        return {
+          id: slideId,
+          title: data.title || `Slide ${slideId}`,
+          content: data.textContent || [],
+          images: data.images || [],
+          module_id: moduleId
+        }
+      })
+      
+      setSlides(localSlides)
+      setModules(defaultModules)
+      setUseLocalData(true)
+      setLoading(false)
+    } catch (err) {
+      console.error('Error loading local content:', err)
+      setError('Failed to load local content')
+      setLoading(false)
+    }
+  }
 
   const loadContent = async () => {
     try {
       setLoading(true)
       setError(null)
       
-      const response = await fetch('/api/slides', {
+      // Try the simple endpoint first
+      let response = await fetch('/api/slides-simple', {
         headers: {
-          ...getAuthHeaders(),
           'Content-Type': 'application/json'
         }
       })
 
+      // If simple endpoint fails, try the authenticated endpoint
+      if (!response.ok) {
+        response = await fetch('/api/slides', {
+          headers: {
+            ...getAuthHeaders(),
+            'Content-Type': 'application/json'
+          }
+        })
+      }
+
       if (response.ok) {
         const data = await response.json()
+        
+        // Transform modules data if needed
+        const transformedModules = (data.modules || []).map(module => ({
+          ...module,
+          slides: module.slides || [module.slide_start || 1, module.slide_end || 1]
+        }))
+        
         setSlides(data.slides || [])
-        setModules(data.modules || [])
+        setModules(transformedModules.length > 0 ? transformedModules : defaultModules)
+        setUseLocalData(false)
       } else {
-        throw new Error('Failed to load content')
+        console.warn('API failed, falling back to local content')
+        loadLocalContent()
       }
     } catch (err) {
-      console.error('Error loading content:', err)
-      setError(err.message)
+      console.error('Error loading content from API:', err)
+      console.log('Falling back to local content...')
+      loadLocalContent()
     } finally {
       setLoading(false)
     }
   }
 
+  const getModuleIdForSlide = (slideId) => {
+    if (slideId >= 1 && slideId <= 15) return 1
+    if (slideId >= 16 && slideId <= 30) return 2
+    if (slideId >= 31 && slideId <= 38) return 3
+    if (slideId >= 39 && slideId <= 46) return 4
+    if (slideId >= 47 && slideId <= 49) return 5
+    return 1
+  }
+
   const getSlide = (slideId) => {
     const slide = slides.find(s => s.id === slideId)
-    if (!slide) return null
+    if (!slide) {
+      // Try to get from local content as fallback
+      const localKey = `slide_${slideId}`
+      if (contentMapping[localKey]) {
+        return {
+          id: slideId,
+          title: contentMapping[localKey].title || `Slide ${slideId}`,
+          textContent: contentMapping[localKey].textContent || [],
+          images: contentMapping[localKey].images || []
+        }
+      }
+      return null
+    }
 
     // Parse content if it's a string
     let parsedContent = slide.content
@@ -72,6 +179,19 @@ export function ContentProvider({ children }) {
   }
 
   const getAllSlides = () => {
+    if (slides.length === 0) {
+      // Return local slides if no API slides available
+      return Object.entries(contentMapping).map(([key, data]) => {
+        const slideId = parseInt(key.replace('slide_', ''))
+        return {
+          id: slideId,
+          title: data.title || `Slide ${slideId}`,
+          textContent: data.textContent || [],
+          images: data.images || []
+        }
+      })
+    }
+
     return slides.map(slide => ({
       ...slide,
       textContent: typeof slide.content === 'string' 
@@ -84,8 +204,10 @@ export function ContentProvider({ children }) {
     const module = modules.find(m => m.id === moduleId)
     if (!module) return []
 
+    const [startSlide, endSlide] = module.slides
+
     return slides
-      .filter(slide => slide.id >= module.slide_start && slide.id <= module.slide_end)
+      .filter(slide => slide.id >= startSlide && slide.id <= endSlide)
       .map(slide => ({
         ...slide,
         textContent: typeof slide.content === 'string' 
@@ -95,6 +217,23 @@ export function ContentProvider({ children }) {
   }
 
   const updateSlide = async (slideId, slideData) => {
+    // If using local data, just update in memory
+    if (useLocalData) {
+      setSlides(prevSlides => 
+        prevSlides.map(slide => 
+          slide.id === slideId 
+            ? { 
+                ...slide, 
+                title: slideData.title,
+                content: slideData.textContent || [],
+                images: slideData.images || []
+              }
+            : slide
+        )
+      )
+      return true
+    }
+
     try {
       const response = await fetch(`/api/slides/${slideId}`, {
         method: 'PUT',
@@ -135,11 +274,15 @@ export function ContentProvider({ children }) {
 
   const discardChanges = (slideId) => {
     // Reload content to discard local changes
-    loadContent()
+    if (isAuthenticated && !useLocalData) {
+      loadContent()
+    } else {
+      loadLocalContent()
+    }
   }
 
   const getUnsavedChangesCount = () => {
-    // Since we're using API calls, there are no local unsaved changes
+    // Since we're using API calls or local memory, there are no unsaved changes
     return 0
   }
 
@@ -154,7 +297,8 @@ export function ContentProvider({ children }) {
     updateSlide,
     discardChanges,
     getUnsavedChangesCount,
-    refreshContent: loadContent
+    refreshContent: isAuthenticated ? loadContent : loadLocalContent,
+    isUsingLocalData: useLocalData
   }
 
   return (

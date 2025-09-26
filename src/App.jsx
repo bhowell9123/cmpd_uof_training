@@ -8,6 +8,7 @@ import Dashboard from './components/Dashboard'
 import SlideEditor from './components/SlideEditor'
 import UserManagement from './components/UserManagement'
 import PresentationView from './components/PresentationView'
+import ErrorBoundary from './components/ErrorBoundary'
 
 // Context
 import { AuthProvider, useAuth } from './contexts/AuthContext'
@@ -69,11 +70,13 @@ function AppLayout() {
 
 function App() {
   return (
-    <AuthProvider>
-      <ContentProvider>
-        <AppLayout />
-      </ContentProvider>
-    </AuthProvider>
+    <ErrorBoundary>
+      <AuthProvider>
+        <ContentProvider>
+          <AppLayout />
+        </ContentProvider>
+      </AuthProvider>
+    </ErrorBoundary>
   )
 }
 
