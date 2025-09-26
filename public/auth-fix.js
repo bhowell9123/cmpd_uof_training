@@ -11,8 +11,8 @@
     if (url === '/api/auth/login' && options && options.method === 'POST') {
       console.log("Intercepting login request and redirecting to simplified endpoint");
       
-      // Redirect to our simplified login endpoint
-      return originalFetch('/api/auth/simple-login-debug', options)
+      // Redirect to our consolidated auth endpoint
+      return originalFetch('/api/auth/auth?path=login', options)
         .then(response => {
           if (!response.ok) {
             return response;

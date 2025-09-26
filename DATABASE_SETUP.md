@@ -103,10 +103,11 @@ This has been fixed by moving API routes to the root `/api` directory.
 ### API Routes Not Working
 The API routes should be accessible at:
 - `/api/init-db` - Initialize database
-- `/api/auth/login` - User login
-- `/api/auth/verify` - Token verification
+- `/api/auth/auth?path=login` - User login
+- `/api/auth/auth?path=verify` - Token verification
 - `/api/slides` - Get all slides
 - `/api/slides/[id]` - Get/update specific slide
+- `/api/slides-simple` - Get slides from local JSON file
 
 ## Local Development
 

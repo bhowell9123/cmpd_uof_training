@@ -42,20 +42,12 @@ export function AuthProvider({ children }) {
 
   const verifyToken = async (authToken) => {
     try {
-      // Try mock endpoint first, then fall back to regular endpoint
-      let response = await fetch('/api/auth/verify-mock', {
+      // Use the consolidated auth endpoint
+      const response = await fetch('/api/auth/auth?path=verify', {
         headers: {
           'Authorization': `Bearer ${authToken}`
         }
       })
-
-      if (!response.ok) {
-        response = await fetch('/api/auth/verify', {
-          headers: {
-            'Authorization': `Bearer ${authToken}`
-          }
-        })
-      }
 
       if (response.ok) {
         const data = await response.json()
@@ -79,24 +71,14 @@ export function AuthProvider({ children }) {
 
   const login = async (username, password) => {
     try {
-      // Try mock endpoint first, then fall back to regular endpoint
-      let response = await fetch('/api/auth/login-mock', {
+      // Use the consolidated auth endpoint
+      const response = await fetch('/api/auth/auth?path=login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({ username, password })
       })
-
-      if (!response.ok) {
-        response = await fetch('/api/auth/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ username, password })
-        })
-      }
 
       const data = await response.json()
 
