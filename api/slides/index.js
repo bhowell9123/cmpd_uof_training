@@ -22,7 +22,12 @@ async function handler(req, res) {
       })
   } catch (error) {
     console.error('Error fetching slides:', error)
-    res.status(500).json({ error: 'Internal server error' })
+    res.status(500)
+      .set({
+        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+        'X-Vercel-Cache-Control': 'no-store'
+      })
+      .json({ error: 'Internal server error' })
   }
 }
 

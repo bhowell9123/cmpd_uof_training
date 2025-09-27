@@ -1,6 +1,6 @@
 import { sql } from '@vercel/postgres'
 import bcrypt from 'bcryptjs'
-import contentMapping from '../assets/content_mapping/content_mapping.json'
+import contentMapping from '../assets/content_mapping/content_mapping.json' assert { type: 'json' }
 
 // Initialize database tables
 export async function initializeDatabase() {
@@ -203,17 +203,21 @@ export async function getSlideById(slideId) {
 }
 
 export async function updateSlide(slideId, title, content, images, userId) {
+  console.log(`[DB] Updating slide ${slideId} with title: ${title}, content length: ${Array.isArray(content) ? content.length : 'N/A'}, images length: ${Array.isArray(images) ? images.length : 'N/A'}, userId: ${userId}`)
+  
   try {
     const result = await sql`
-      UPDATE slides 
-      SET title = ${title}, 
-          content = ${JSON.stringify(content)}, 
+      UPDATE slides
+      SET title = ${title},
+          content = ${JSON.stringify(content)},
           images = ${images || []},
           updated_at = NOW(),
           updated_by = ${userId}
       WHERE id = ${slideId}
       RETURNING *
     `
+    
+    console.log(`[DB] Slide update result:`, result.rows[0] ? `Success, updated slide ${slideId}` : 'No slide updated')
     
     // Log the change
     await logAuditAction(userId, slideId, 'update_slide', {
