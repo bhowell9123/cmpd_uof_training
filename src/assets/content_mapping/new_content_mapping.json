@@ -1,0 +1,441 @@
+{
+  "slide_01": {
+    "title": "Use of Force Training",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Welcome to the CMPD Use of Force Training Program",
+        "content": "The following presentation has been developed to provide officers with guidance regarding the proper application of force in accordance with departmental directives and legal standards."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Training Objectives:",
+        "items": [
+          "Understand the legal framework governing use of force",
+          "Learn to assess threat levels and respond appropriately",
+          "Develop decision-making skills for high-pressure situations",
+          "Recognize the importance of de-escalation techniques"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide1.png"
+    ]
+  },
+  "slide_02": {
+    "title": "Training Overview",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Use of Force Training",
+        "content": "The following presentation has been developed to provide officers with guidance regarding the proper application of force in accordance with departmental directives and legal standards."
+      },
+      {
+        "type": "bullet-list",
+        "title": "This training covers:",
+        "items": [
+          "Legal framework for use of force",
+          "Departmental policies and procedures",
+          "Proper techniques and decision-making",
+          "Documentation and reporting requirements"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide2.png"
+    ]
+  },
+  "slide_03": {
+    "title": "Policy Statement",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Cape May Police Department Policy",
+        "content": "It is the policy of the Cape May Police Department that officers hold the highest regard for the dignity and liberty of all persons and place minimal reliance upon the use of force and instead use de-escalation tactics to the extent possible under the circumstances."
+      },
+      {
+        "type": "paragraph",
+        "content": "This department respects and values the sanctity of human life and the application of deadly force is a measure to be employed only in the most extreme circumstances."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Key Policy Elements:",
+        "items": [
+          "Officers shall use only that degree of force that is reasonable, necessary, and proportional considering the totality of the circumstances",
+          "Officers must consider the subject's mental and physical condition",
+          "Officers must consider the nature of the offense",
+          "Officers must consider the level of resistance or threat known at the time"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Officers whose actions are consistent with the law and the provisions of this policy will be strongly supported by the law enforcement community in any subsequent review of their conduct regarding the use of force."
+      }
+    ],
+    "images": [
+      "../images/slide3.png"
+    ]
+  },
+  "slide_04": {
+    "title": "Core Principle One: Sanctity of Human Life",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "The Sanctity of Human Life and Serving the Community",
+        "content": "In serving the community, officers shall make every effort to preserve and protect human life and the safety of all persons. Officers shall also respect and uphold the dignity of all persons at all times in a non-discriminatory manner."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Key Elements:",
+        "items": [
+          "Every officer shall respect the sanctity of human life and the dignity of every person",
+          "Officers shall act to preserve every life, whenever possible",
+          "Officers shall avoid unnecessary injury to members of the public or themselves",
+          "A respectful and cooperative relationship with the community is essential for effective law enforcement",
+          "This relationship can be undermined when force is used unnecessarily or unequally"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Non-Discrimination Requirement",
+        "items": []
+      }
+    ],
+    "images": [
+      "../images/slide4.png"
+    ]
+  },
+  "slide_05": {
+    "title": "Core Principle Two: Force as Last Resort",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Force as a Last Resort and Duty to De-Escalate",
+        "content": "Force shall only be used as a last resort when necessary to accomplish lawful objectives that cannot reasonably be achieved through verbal commands, critical decision making, tactical deployment or de-escalation techniques. Force shall never be used as a retaliatory or punitive measure."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Authorized Uses of Force:",
+        "items": [
+          "Effectuating a lawful arrest or detention",
+          "Carrying out a lawful search",
+          "Overcoming resistance directed at the officer or others",
+          "Preventing physical harm to the officer or another person",
+          "Protecting the officer or third party from unlawful force",
+          "Preventing property damage or loss"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Officers shall exhaust all other reasonable means to gain compliance before resorting to force, if feasible. If a safe alternative would achieve law enforcement's objective, force shall not be used."
+      }
+    ],
+    "images": [
+      "../images/slide5.png"
+    ]
+  },
+  "slide_06": {
+    "title": "Critical Decision-Making",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Critical Decision-Making Model",
+        "content": "Critical decision-making and tactical deployment techniques include tactical communication and tactical positioning, such as strategic redeployment and time as a tactic."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Critical Decision-Making Process:",
+        "items": [
+          "Begin critical assessment and planning prior to arriving at the scene",
+          "Collect available information",
+          "Assess situations, threats, and risks",
+          "Identify options for conflict resolution",
+          "Determine the best course of action",
+          "Act, review and reassess the situation as it evolves"
+        ]
+      },
+      {
+        "type": "bullet-list",
+        "title": "Tactical Positioning",
+        "items": [
+          "Making advantageous uses of position, distance, and cover to reduce the risk of injury to an officer and avoid or reduce the need to use force."
+        ]
+      },
+      {
+        "type": "bullet-list",
+        "title": "Time as a Tactic",
+        "items": [
+          "A method to avoid forcing an immediate resolution to a situation if it can be safely done, including establishing a zone of safety around a person that creates an opportunity for an assessment and action, when feasible, thereby decreasing the need to resort to force."
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Strategic Redeployment",
+        "items": []
+      }
+    ],
+    "images": [
+      "../images/slide6.png"
+    ]
+  },
+  "slide_07": {
+    "title": "De-escalation Techniques",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "What is De-escalation?",
+        "content": "De-escalation is the action of communicating verbally or nonverbally in an attempt to reduce, stabilize, or eliminate the immediacy of a threat. De-escalation may also be used to create the time needed to allow the situation to resolve itself or to position additional resources to resolve the situation with the least amount of force necessary."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Key De-escalation Techniques:",
+        "items": [
+          "Communication techniques to calm an agitated subject (e.g., regulating tone and pitch, speaking slowly in a calm voice)",
+          "Rational decision-making techniques, such as ensuring that only one officer addresses the person while others remain detached as safety permits",
+          "Active listening techniques, such as sharing the officer's name, asking the subject their name, and exhibiting a genuine willingness to listen",
+          "Slowing down the pace of the incident by taking deep breaths, slowing speech, and applying strategic thinking",
+          "Using calming gestures and facial expressions (e.g., arms extended with palms out and avoiding angry expressions)",
+          "Procedural-justice techniques, such as explaining the officer's actions and responding to questions"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Warning and Opportunity to Comply",
+        "items": []
+      }
+    ],
+    "images": [
+      "../images/slide7.png",
+      "../images/slide7.2.png"
+    ]
+  },
+  "slide_08": {
+    "title": "Special Considerations",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Factors Affecting Compliance",
+        "content": "Officers should consider an individual's mental, physical, developmental, intellectual disability, or other conditions that affect the person's ability to communicate or comply."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Factors to Consider:",
+        "items": [
+          "Behavioral or mental health crisis",
+          "Drug interaction",
+          "Medical condition",
+          "Mental impairment",
+          "Physical limitation",
+          "Developmental disability, including autism spectrum disorder",
+          "Cognitive impairment or intellectual disability",
+          "Hearing loss or impairment",
+          "Communication disorder, including speech impairment",
+          "Language barrier",
+          "Visual impairment",
+          "Age (very young or elderly)"
+        ]
+      },
+      {
+        "type": "bullet-list",
+        "title": "Response Techniques:",
+        "items": [
+          "Obtain information from available sources including family members, caregivers or others who know the individual",
+          "Decrease exposure to potential threats by moving to a safer position"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Excited Delirium Awareness",
+        "items": []
+      }
+    ],
+    "images": [
+      "../images/slide8.png"
+    ]
+  },
+  "slide_09": {
+    "title": "Core Principle Three: Reasonable Force",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Duty to Use Only Objectively Reasonable, Necessary, and Proportional Force",
+        "content": "Officers shall use the least amount of force that is objectively reasonable, necessary, and proportional to safely achieve the legitimate law enforcement objective under the circumstances."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Key Considerations When Using Force:",
+        "items": [
+          "Immediacy and severity of the threat to officers or the public",
+          "Conduct of the individual being confronted, as reasonably perceived by the officer at the time",
+          "Officer and subject characteristics (e.g., age, size, relative strength, skill level, injuries sustained, level of exhaustion or fatigue)",
+          "Effects of drugs or alcohol on the subject",
+          "Mental state or capacity of the individual",
+          "Proximity of weapons or dangerous improvised devices"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Additional Force Considerations",
+        "items": []
+      },
+      {
+        "type": "paragraph",
+        "content": "Important Note: Law enforcement encounters are never static and rapidly evolve. Officers must continuously assess the effectiveness, proportionality, and necessity of their actions, including their tactical positioning, in order to decrease the likelihood of force being needed."
+      }
+    ],
+    "images": [
+      "../images/slide9.png"
+    ]
+  },
+  "slide_10": {
+    "title": "Levels of Resistance",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Resistance Levels",
+        "content": "The level of resistance that an officer encounters is a key factor in determining the appropriate amount of force that may be used in response. The less resistance an officer faces, the less force the officer should use."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Resistance Categories:",
+        "items": []
+      },
+      {
+        "type": "bullet-list",
+        "title": "Cooperative Person",
+        "items": [
+          "A person who responds to and complies with an officer's directions.",
+          "Appropriate Response: Officers may rely on police presence and/or verbal control techniques, but should not use force."
+        ]
+      },
+      {
+        "type": "bullet-list",
+        "title": "Passive Resistor",
+        "items": [
+          "A person who is non-compliant in that they fail to comply in a non-movement way with verbal or other direction from an officer.",
+          "Appropriate Response: Officers may rely on police presence, verbal control techniques, holding techniques, lifting/carrying, wrist locks and other manual pain compliance techniques. Greater force, such as strikes, punches, CEDs, or less lethal devices shall not be used."
+        ]
+      },
+      {
+        "type": "bullet-list",
+        "title": "Active Resistor",
+        "items": [
+          "A person who is uncooperative, fails to comply with directions, and actively attempts to avoid physical control. This includes evasive movement, flailing arms, tensing arms, and flight.",
+          "Appropriate Response: In addition to options for passive resistors, officers may use physical strikes with hands or feet, OC spray or batons applied with non-impact pressure, and taking the person to the ground."
+        ]
+      },
+      {
+        "type": "bullet-list",
+        "title": "Threatening Assailant",
+        "items": [
+          "A person who is threatening the use of force against an officer or another person, with or without a weapon, in an aggressive manner that may cause bodily injury.",
+          "Appropriate Response: Officers may use all types of force options other than deadly force, including striking with batons, less lethal ammunition, and CEDs. Force must be proportional to the threat faced."
+        ]
+      },
+      {
+        "type": "bullet-list",
+        "title": "Active Assailant",
+        "items": [
+          "A person who is using or imminently threatening the use of force, with or without a weapon, in an aggressive manner that poses a substantial risk of causing bodily injury.",
+          "Appropriate Response: Officers have all force options available, though deadly force shall only be used as a last resort."
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Important Considerations",
+        "items": []
+      }
+    ],
+    "images": [
+      "../images/slide10.png"
+    ]
+  },
+  "slide_11": {
+    "title": "Displaying a Firearm",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Special Requirements for Displaying Firearms",
+        "content": "Unholstering or pointing a firearm are tactics that should be used with great caution. The presence of an officer's firearm, under the right circumstances, can discourage resistance and ensure officer safety without the need to resort to force."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Guidelines for Displaying Firearms:",
+        "items": [
+          "Unnecessarily or prematurely drawing a firearm could limit an officer's options in controlling a situation",
+          "It could create greater anxiety on the part of the public",
+          "It could result in an unwarranted or accidental discharge of the firearm"
+        ]
+      },
+      {
+        "type": "bullet-list",
+        "title": "Pointing a Firearm:",
+        "items": [
+          "Officers can point a firearm at a person only when circumstances create a reasonable belief that it may be necessary to use deadly force",
+          "When the officer no longer reasonably believes that deadly force may be necessary, the officer shall, as soon as practicable, secure or holster the firearm",
+          "Pointing a firearm, though not a use of force, constitutes a seizure that must be reported as a Show of Force on the Attorney General's Use of Force Reporting Portal"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Tactical Teams Exception",
+        "items": []
+      },
+      {
+        "type": "expandable-section",
+        "header": "Conducted Energy Devices (CEDs)",
+        "items": []
+      }
+    ],
+    "images": [
+      "../images/slide11.png"
+    ]
+  },
+  "slide_12": {
+    "title": "Positional Asphyxiation",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Positional Asphyxiation",
+        "content": "Positional asphyxiation is insufficient intake of oxygen as a result of body position that interferes with the subject's ability to breathe. It can occur during the process of subduing and restraining a person by placing the person in a posture that prevents or impedes the mechanism of normal breathing."
+      },
+      {
+        "type": "bullet-list",
+        "title": "Risk Factors:",
+        "items": [
+          "Alcohol or drug intoxication",
+          "Possible mental health episode or incident",
+          "A substantially overweight individual",
+          "Possible suffering or respiratory muscle fatigue (exhaustion)",
+          "Possible airway obstruction",
+          "Unconsciousness"
+        ]
+      },
+      {
+        "type": "bullet-list",
+        "title": "Warning Signs:",
+        "items": [
+          "Verbal complaints of being unable to breathe properly",
+          "Visual signs of struggling or increased effort to breathe",
+          "Gurgling/gasping sounds with foam or mucus from nose or mouth",
+          "Heightened aggression during restraint (fighting for air)",
+          "Sudden behavioral changes (violent to quiet, or suddenly more aggressive)",
+          "Blue discoloration of facial skin (cyanosis)"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Required Actions to Reduce Risk",
+        "items": []
+      },
+      {
+        "type": "paragraph",
+        "content": "Critical Warning: If the person cannot escape from the position, death may occur very rapidly. Restraint in the prone position presents a significant risk of asphyxia, particularly when a person is handcuffed and left in a face-down position."
+      }
+    ],
+    "images": [
+      "../images/slide12.png",
+      "../images/slide12.2.png"
+    ]
+  }
+}

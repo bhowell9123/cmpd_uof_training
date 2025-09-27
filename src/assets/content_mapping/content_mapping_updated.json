@@ -1,0 +1,47 @@
+ou just{
+  "slide_01": {
+    "title": "Use of Force Training",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Welcome to the CMPD Use of Force Training Program",
+        "content": "The following presentation has been developed to provide officers with guidance regarding the proper application of force in accordance with departmental directives and legal standards."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Understand the legal framework governing use of force",
+          "Learn to assess threat levels and respond appropriately",
+          "Develop decision-making skills for high-pressure situations",
+          "Recognize the importance of de-escalation techniques"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide1.png"
+    ]
+  },
+  "slide_02": {
+    "title": "Training Overview",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Use of Force Training",
+        "content": "The following presentation has been developed to provide officers with guidance regarding the proper application of force in accordance with departmental directives and legal standards."
+      },
+      {
+        "type": "bullet-list",
+        "title": "This training covers:",
+        "items": [
+          "Legal framework for use of force",
+          "Departmental policies and procedures",
+          "Proper techniques and decision-making",
+          "Documentation and reporting requirements"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide2.png"
+    ]
+  }
+}

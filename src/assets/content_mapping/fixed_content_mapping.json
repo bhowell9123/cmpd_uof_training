@@ -1,0 +1,2164 @@
+{
+  "slide_01": {
+    "title": "Use of Force Training",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Welcome to the CMPD Use of Force Training Program",
+        "content": "This training program is designed to provide officers with comprehensive guidance on the proper application of force in accordance with department policy and legal standards."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Understand the legal framework governing use of force",
+          "Learn to assess threat levels and respond appropriately",
+          "Develop decision-making skills for high-pressure situations",
+          "Recognize the importance of de-escalation techniques"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide1.png"
+    ]
+  },
+  "slide_02": {
+    "title": "Training Overview",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Use of Force Training",
+        "content": "The following presentation has been developed to provide officers with guidance regarding the proper application of force in accordance with departmental directives and legal standards."
+      },
+      {
+        "type": "bullet-list",
+        "title": "This training covers:",
+        "items": [
+          "Legal framework for use of force",
+          "Departmental policies and procedures",
+          "Proper techniques and decision-making",
+          "Documentation and reporting requirements"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide2.png"
+    ]
+  },
+  "slide_03": {
+    "title": "Policy Statement",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Cape May Police Department Policy",
+        "content": "It is the policy of the Cape May Police Department that officers hold the highest regard for the dignity and liberty of all persons and place minimal reliance upon the use of force and instead use de-escalation tactics to the extent possible under the circumstances."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Officers shall use only that degree of force that is reasonable, necessary, and proportional considering the totality of the circumstances",
+          "Officers must consider the subject's mental and physical condition",
+          "Officers must consider the nature of the offense",
+          "Officers must consider the level of resistance or threat known at the time"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "This department respects and values the sanctity of human life and the application of deadly force is a measure to be employed only in the most extreme circumstances."
+      },
+      {
+        "type": "paragraph",
+        "content": "Officers whose actions are consistent with the law and the provisions of this policy will be strongly supported by the law enforcement community in any subsequent review of their conduct regarding the use of force."
+      }
+    ],
+    "images": [
+      "../images/slide3.png"
+    ]
+  },
+  "slide_04": {
+    "title": "Core Principle One: Sanctity of Human Life",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "The Sanctity of Human Life and Serving the Community",
+        "content": "In serving the community, officers shall make every effort to preserve and protect human life and the safety of all persons. Officers shall also respect and uphold the dignity of all persons at all times in a non-discriminatory manner."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Every officer shall respect the sanctity of human life and the dignity of every person",
+          "Officers shall act to preserve every life, whenever possible",
+          "Officers shall avoid unnecessary injury to members of the public or themselves",
+          "A respectful and cooperative relationship with the community is essential for effective law enforcement",
+          "This relationship can be undermined when force is used unnecessarily or unequally"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Non-Discrimination Requirement",
+        "items": []
+      }
+    ],
+    "images": [
+      "../images/slide4.png"
+    ]
+  },
+  "slide_05": {
+    "title": "Core Principle Two: Force as Last Resort",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Force as a Last Resort and Duty to De-Escalate",
+        "content": "Force shall only be used as a last resort when necessary to accomplish lawful objectives that cannot reasonably be achieved through verbal commands, critical decision making, tactical deployment or de-escalation techniques. Force shall never be used as a retaliatory or punitive measure."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Effectuating a lawful arrest or detention",
+          "Carrying out a lawful search",
+          "Overcoming resistance directed at the officer or others",
+          "Preventing physical harm to the officer or another person",
+          "Protecting the officer or third party from unlawful force",
+          "Preventing property damage or loss"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Prohibited Uses of Force",
+        "items": [
+          "To punish a person or to retaliate against them for past conduct",
+          "As a lesson to prevent a person from resisting or fleeing in the future",
+          "To resolve a situation more quickly, unless delay would risk safety or significantly interfere with legitimate law enforcement objectives"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide5.png"
+    ]
+  },
+  "slide_06": {
+    "title": "Critical Decision-Making",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Critical Decision-Making Model",
+        "content": "Critical decision-making and tactical deployment techniques include tactical communication and tactical positioning, such as strategic redeployment and time as a tactic."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Begin critical assessment and planning prior to arriving at the scene",
+          "Collect available information",
+          "Assess situations, threats, and risks",
+          "Identify options for conflict resolution",
+          "Determine the best course of action",
+          "Act, review and reassess the situation as it evolves"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Strategic Redeployment",
+        "items": []
+      }
+    ],
+    "images": [
+      "../images/slide6.png"
+    ]
+  },
+  "slide_07": {
+    "title": "De-escalation Techniques",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "What is De-escalation?",
+        "content": "De-escalation is the action of communicating verbally or nonverbally in an attempt to reduce, stabilize, or eliminate the immediacy of a threat. De-escalation may also be used to create the time needed to allow the situation to resolve itself or to position additional resources to resolve the situation with the least amount of force necessary."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Communication techniques to calm an agitated subject (e.g., regulating tone and pitch, speaking slowly in a calm voice)",
+          "Rational decision-making techniques, such as ensuring that only one officer addresses the person while others remain detached as safety permits",
+          "Active listening techniques, such as sharing the officer's name, asking the subject their name, and exhibiting a genuine willingness to listen",
+          "Slowing down the pace of the incident by taking deep breaths, slowing speech, and applying strategic thinking",
+          "Using calming gestures and facial expressions (e.g., arms extended with palms out and avoiding angry expressions)",
+          "Procedural-justice techniques, such as explaining the officer's actions and responding to questions"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Warning and Opportunity to Comply",
+        "items": [
+          "Provide clear instructions and warnings",
+          "Attempt to determine whether the person has a special need, mental condition, physical limitation, developmental disability, or language barrier",
+          "State the consequences of refusing to comply with a mandatory directive, including that force will be used unless the person complies",
+          "Give the suspect a reasonable opportunity to comply"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide7.png",
+      "../images/slide7.2.png"
+    ]
+  },
+  "slide_08": {
+    "title": "Special Considerations",
+    "textContent": [
+      {
+        "type": "bullet-list",
+        "items": [
+          "Obtain information from available sources including family members, caregivers or others who know the individual",
+          "Decrease exposure to potential threats by moving to a safer position",
+          "Slow down the pace of the incident",
+          "Call for specialized resources (Crisis Intervention Team, behavioral health providers, negotiators, qualified bi-lingual officers)",
+          "Use time as a de-escalation strategy"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Excited Delirium Awareness",
+        "items": []
+      }
+    ],
+    "images": [
+      "../images/slide8.png"
+    ]
+  },
+  "slide_09": {
+    "title": "Core Principle Three: Reasonable Force",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Duty to Use Only Objectively Reasonable, Necessary, and Proportional Force",
+        "content": "Officers shall use the least amount of force that is objectively reasonable, necessary, and proportional to safely achieve the legitimate law enforcement objective under the circumstances."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Immediacy and severity of the threat to officers or the public",
+          "Conduct of the individual being confronted, as reasonably perceived by the officer at the time",
+          "Officer and subject characteristics (e.g., age, size, relative strength, skill level, injuries sustained, level of exhaustion or fatigue)",
+          "Effects of drugs or alcohol on the subject",
+          "Mental state or capacity of the individual",
+          "Proximity of weapons or dangerous improvised devices"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Additional Force Considerations",
+        "items": [
+          "The degree to which the subject has been effectively restrained and their ability to resist despite being restrained",
+          "The availability of other options and possible effectiveness",
+          "The seriousness of the suspected offense or reason for contact with the individual",
+          "The officer's training and experience",
+          "The potential for injury to officers, suspects, and the public"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide9.png"
+    ]
+  },
+  "slide_10": {
+    "title": "Levels of Resistance",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Resistance Levels",
+        "content": "The level of resistance that an officer encounters is a key factor in determining the appropriate amount of force that may be used in response. The less resistance an officer faces, the less force the officer should use."
+      },
+      {
+        "type": "expandable-section",
+        "header": "Important Considerations",
+        "items": [
+          "If the individual's resistance diminishes, the officer shall immediately reduce the level of force used.",
+          "If the individual stops resisting entirely, the officer must immediately cease using force.",
+          "Flight from an officer does not, on its own, qualify a person as an assailant."
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide10.png"
+    ]
+  },
+  "slide_11": {
+    "title": "Displaying a Firearm",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Special Requirements for Displaying Firearms",
+        "content": "Unholstering or pointing a firearm are tactics that should be used with great caution. The presence of an officer's firearm, under the right circumstances, can discourage resistance and ensure officer safety without the need to resort to force."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Unnecessarily or prematurely drawing a firearm could limit an officer's options in controlling a situation",
+          "It could create greater anxiety on the part of the public",
+          "It could result in an unwarranted or accidental discharge of the firearm"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Tactical Teams Exception\n                +",
+        "items": []
+      },
+      {
+        "type": "expandable-section",
+        "header": "Conducted Energy Devices (CEDs)\n                +",
+        "items": []
+      }
+    ],
+    "images": [
+      "../images/slide11.png"
+    ]
+  },
+  "slide_12": {
+    "title": "Positional Asphyxiation",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Positional Asphyxiation",
+        "content": "Positional asphyxiation is insufficient intake of oxygen as a result of body position that interferes with the subject's ability to breathe. It can occur during the process of subduing and restraining a person by placing the person in a posture that prevents or impedes the mechanism of normal breathing."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Verbal complaints of being unable to breathe properly",
+          "Visual signs of struggling or increased effort to breathe",
+          "Gurgling/gasping sounds with foam or mucus from nose or mouth",
+          "Heightened aggression during restraint (fighting for air)",
+          "Sudden behavioral changes (violent to quiet, or suddenly more aggressive)",
+          "Blue discoloration of facial skin (cyanosis)",
+          "Swelling, redness or blood spots to the face or neck",
+          "Any loss or reduced level of consciousness"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Required Actions to Reduce Risk",
+        "items": [
+          "As soon as handcuffed and restrained, a person should be immediately rolled to the side and taken to an upright position that does not impede normal breathing",
+          "Avoid putting sustained pressure on the neck or back, as breathing can be restricted even in the recovery position",
+          "Continuously monitor the person's condition while being restrained",
+          "When possible, designate a 'Safety Officer' to monitor health and welfare during restraint",
+          "Do not transport the arrested person in the prone position",
+          "Monitor the subject prior to, during, and at the conclusion of transport"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Critical Warning: If the person cannot escape from the position, death may occur very rapidly. Restraint in the prone position presents a significant risk of asphyxia, particularly when a person is handcuffed and left in a face-down position."
+      }
+    ],
+    "images": [
+      "../images/slide12.png",
+      "../images/slide12.2.png"
+    ]
+  },
+  "slide_13": {
+    "title": "Core Principle Four: Deadly Force as Last Resort",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Duty to Use Deadly Force Only as an Absolute Last Resort",
+        "content": "Deadly force shall only be used as an absolute last resort and in strict compliance with department policy. Other actions by law enforcement that create a substantial risk of death or serious bodily injury must be avoided or employed only under the strictest of conditions."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Applying a chokehold, carotid artery restraint, or similar technique that involves pressure on the neck",
+          "Sitting, kneeling, or standing on a person's chest, back, or neck for a prolonged period of time",
+          "Intentionally driving a vehicle at or in the direction of a person with the intent to strike the individual",
+          "Using a baton or other weapon to intentionally strike an individual in the head or neck area"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Requirements to Use Deadly Force",
+        "items": [
+          "When feasible, officers shall attempt to de-escalate situations, issue verbal warnings, or use non-lethal force with the goal of resolving encounters without using deadly force",
+          "Officers shall not use deadly force if a reasonably available alternative will avert or eliminate an imminent danger of death or serious bodily injury and achieve the law enforcement purpose safely",
+          "When feasible, prior to using deadly force the officer shall identify themselves as a law enforcement officer and give a clear verbal warning to the suspect that the officer will use deadly force",
+          "Officers shall not use deadly force when the use of deadly force creates a substantial risk of injury to innocent persons"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide13.png"
+    ]
+  },
+  "slide_14": {
+    "title": "Prohibited Uses of Deadly Force",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Specific Prohibited Circumstances",
+        "content": "There are specific circumstances in which the use of deadly force is prohibited. Officers may not discharge their weapons or use other deadly force in the following situations:"
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "To signal for help",
+          "To issue a warning shot",
+          "To prevent property damage or loss",
+          "To prevent the destruction of evidence",
+          "Against a person who poses a threat only to themselves and not to others"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Fleeing Suspects",
+        "items": []
+      },
+      {
+        "type": "expandable-section",
+        "header": "Shooting at Moving Vehicles",
+        "items": [
+          "When there is imminent danger of death or serious bodily injury to the officer or another person, created by a person in the vehicle using means other than the vehicle, such as when shots are being fired from the vehicle",
+          "When the suspect is driving their vehicle toward persons other than the officer in a manner creating an imminent threat of death or serious bodily injury, such as in a terrorist attack",
+          "When the officer is being dragged or carried by the vehicle, cannot disengage from the vehicle, and is in imminent danger of death or serious bodily injury"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Shooting from Moving Vehicles",
+        "items": [
+          "When the suspect is driving a vehicle toward persons other than the officer in a manner creating an imminent threat of death or serious bodily injury, such as in a terrorist attack; and",
+          "No other means are available at that time to avert or eliminate the danger"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide14.png"
+    ]
+  },
+  "slide_15": {
+    "title": "Surrendering a Weapon",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Weapon Surrender Policy",
+        "content": "An officer shall not surrender their weapon unless it is the only alternative and only after the officer has used every tactical tool at the officer's disposal to avoid surrendering their weapon."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Maintain tactical positioning and distance",
+          "Use available cover and concealment",
+          "Request backup when possible",
+          "Utilize de-escalation techniques",
+          "Consider tactical retreat if it can be done safely"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Module 1 Summary: Core Principles",
+        "items": [
+          "Sanctity of Human Life: Officers shall make every effort to preserve and protect human life and the safety of all persons.",
+          "Force as Last Resort: Force shall only be used as a last resort when necessary to accomplish lawful objectives that cannot reasonably be achieved through verbal commands, critical decision making, tactical deployment or de-escalation techniques.",
+          "Reasonable Force: Officers shall use the least amount of force that is objectively reasonable, necessary, and proportional to safely achieve the legitimate law enforcement objective under the circumstances.",
+          "Deadly Force as Last Resort: Deadly force shall only be used as an absolute last resort and in strict compliance with department policy."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: The primary duty of all law enforcement officers is to preserve human life. Only when no other means are available should an officer consider surrendering their weapon."
+      }
+    ],
+    "images": [
+      "../images/slide15.png"
+    ]
+  },
+  "slide_16": {
+    "title": "Module 2: Definitions and Classifications",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Types of subjects (Cooperative, Passive Resistor, Active Resistor, etc.)",
+          "Levels of resistance",
+          "Constructive authority"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide16.png"
+    ]
+  },
+  "slide_17": {
+    "title": "Types of Subjects",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Subject Classifications",
+        "content": "Understanding the different types of subjects officers may encounter is essential for determining the appropriate level of force that may be used in response."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Refuses to move when directed",
+          "Goes limp",
+          "Refuses to speak or respond to commands",
+          "Does not physically resist control measures"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide17.png"
+    ]
+  },
+  "slide_18": {
+    "title": "Types of Force",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Force Classifications",
+        "content": "The Cape May Police Department categorizes force into distinct types, each with specific applications, limitations, and reporting requirements."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Taking a resisting subject to the ground",
+          "Using wrist or arm locks",
+          "Striking the subject with the hands or feet",
+          "Other similar methods of hand-to-hand confrontation",
+          "Pain compliance techniques"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Constructive Authority",
+        "items": [
+          "Verbal commands",
+          "Gestures",
+          "Warnings",
+          "Unholstering a weapon",
+          "Pointing a firearm at a subject (only in appropriate circumstances)"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide18.png"
+    ]
+  },
+  "slide_19": {
+    "title": "Conducted Energy Devices (CEDs)",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding CEDs",
+        "content": "A Conducted Energy Device (CED) means any device approved by the Attorney General that is capable of firing darts/electrodes that transmit an electrical charge or current intended to temporarily disable a person."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Cartridge: A shell containing probes that penetrate the target and deliver neuromuscular incapacitation (NMI)",
+          "Data Download: The method of electronic recovery of the firing and video data saved by the CED upon activation",
+          "Discharge: To cause an electrical charge or current to be directed at a person in contact with the darts/electrodes",
+          "Drive Stun Mode: To discharge a CED when the main body of the device is in direct contact with the person against whom the charge or current is transmitted"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Specific Authorized Circumstances",
+        "items": [
+          "An active assailant",
+          "A threatening assailant who will not voluntarily submit to custody after having been given a reasonable opportunity to do so",
+          "A person who is attempting to cause death or serious bodily injury to themselves",
+          "A fleeing suspect, if clear and convincing evidence exists to believe the suspect has committed a crime in which the suspect caused or attempted to cause death or serious bodily injury"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Prohibited Uses of CEDs",
+        "items": [
+          "A CED shall not be used or threatened to be used to retaliate for any past conduct or to impose punishment",
+          "A CED shall not be used against a person who is a passive resistor or an active resistor",
+          "A CED shall not be fired or discharged for the sole purpose of preventing a person from committing property damage",
+          "A CED shall not be deployed against the operator of a moving vehicle unless the use of deadly force against the operator of the motor vehicle would be authorized",
+          "A CED shall not be used against a person in drive stun mode more than twice unless deadly force would be authorized",
+          "Two or more CEDs shall not be discharged upon a person at the same time"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide19.png"
+    ]
+  },
+  "slide_20": {
+    "title": "CED Safety Considerations",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Safety Protocols for CED Use",
+        "content": "While CEDs are considered less-lethal devices, they still require careful consideration and adherence to safety protocols to minimize risks to subjects and officers."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "To ensure officer safety, when feasible, at least one law enforcement officer other than the one deploying the CED should be present",
+          "The second officer should be armed with lethal ammunition and be prepared to utilize deadly force if the use of a CED fails",
+          "Deadly force would only be authorized in this situation as a last resort, if otherwise permitted by department policy",
+          "During the deployment of a CED, the deploying officer shall, when feasible, continually evaluate the options selected against changing circumstances",
+          "Officers trained and authorized to carry a CED shall be aware of and comply with any targeting recommendations made by the manufacturer"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Use with Other Force Options",
+        "items": []
+      },
+      {
+        "type": "expandable-section",
+        "header": "Handcuffed Subjects",
+        "items": [
+          "Deadly force would be authorized under department policy; and",
+          "The use of physical or mechanical force is not feasible or would be ineffective"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide20.png",
+      "../images/slide20.2.png"
+    ]
+  },
+  "slide_21": {
+    "title": "Less-Lethal Devices and Ammunition",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Less-Lethal Options",
+        "content": "Less-lethal devices and ammunition provide officers with additional force options that are designed to temporarily incapacitate a subject without causing death or serious injury."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "An officer may fire or discharge a less-lethal device during an actual operation, only against:\n                \n                    An active assailant\n                    A threatening assailant who will not voluntarily submit to custody after given a reasonable opportunity\n                    A person attempting to cause death or serious bodily injury to themselves\n                    A fleeing suspect if clear and convincing evidence exists to believe the suspect has committed a crime causing or attempting to cause death or serious bodily injury",
+          "An active assailant",
+          "A threatening assailant who will not voluntarily submit to custody after given a reasonable opportunity",
+          "A person attempting to cause death or serious bodily injury to themselves",
+          "A fleeing suspect if clear and convincing evidence exists to believe the suspect has committed a crime causing or attempting to cause death or serious bodily injury"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Targeting Considerations",
+        "items": [
+          "Intentionally aiming approved less-lethal impact ammunition at the head, neck, chest and groin should be avoided unless deadly force is justified, necessary and appropriate",
+          "No ammunition designed to be skip-fired, and/or non-target specific will be deemed acceptable",
+          "Weapons used for the deployment of less than lethal platforms or ammunition shall be dedicated exclusively for that purpose",
+          "These weapons shall be clearly marked to distinguish them from firearms intended for the use of lethal ammunition"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Prohibited Uses",
+        "items": [
+          "Less-lethal devices or ammunition shall not be used in a crowd management situation except against specific threatening assailants or active assailants",
+          "Less-lethal devices or ammunition shall not be used to prevent a person from causing property damage",
+          "A less-lethal device shall not be directed against a person who is situated on an elevated surface unless reasonable efforts have been made to prevent or minimize a fall-related injury"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide21.png"
+    ]
+  },
+  "slide_22": {
+    "title": "Mechanical Force Options",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Mechanical Force",
+        "content": "Mechanical force involves the use of a device or substance, other than a firearm, to overcome a subject's resistance to the exertion of the officer's authority. Common mechanical force options include batons and OC spray."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Batons are defensive impact tools that may be used when the justification for the use of mechanical force exists",
+          "Batons shall only be used as instructed",
+          "Once resistance ceases, the use of the baton as a striking tool shall cease",
+          "Officers must exercise special care in their use and avoid striking potentially fatal areas of the body identified during training except when deadly force is otherwise authorized"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Baton Safety Considerations",
+        "items": [
+          "Any strikes to the head or neck with a baton or asp are considered deadly force and can only be used when deadly force is allowed",
+          "If a baton is used, officers shall observe the affected subject(s) for obvious changes in condition or breathing",
+          "Officers shall immediately summon medical assistance if the subject appears to need medical aid"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "OC Spray Restrictions",
+        "items": [
+          "OC shall not be used in the immediate vicinity of infants or the elderly unless necessary",
+          "OC shall not be used on the operator of a motor vehicle unless the motor vehicle is first disabled (e.g., removal of keys from the ignition)",
+          "Once resistance ceases, the further application of OC shall cease",
+          "In crowd control situations, OC spray may be used against specific individuals who are active resistors, threatening assailants or active assailants",
+          "OC spray shall not be used where bystanders would be unreasonably affected",
+          "OC spray shall not be used against passive resistors, or indiscriminately against groups of people"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Excited Delirium Considerations",
+        "items": [
+          "Extreme mental and physiological excitement",
+          "Intense agitation",
+          "Hyperthermia often resulting in nudity",
+          "Hostility",
+          "Exceptional strength",
+          "Endurance without fatigue",
+          "Unusual calmness after restraint"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide22.png"
+    ]
+  },
+  "slide_23": {
+    "title": "Force Continuum",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding the Force Continuum",
+        "content": "The force continuum is a model that illustrates the relationship between subject behavior and appropriate officer response. It helps officers understand what level of force is appropriate based on the level of resistance encountered."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "expandable-section",
+        "header": "Key Principles of the Force Continuum",
+        "items": [
+          "The level of resistance that an officer encounters is a key factor in determining the appropriate amount of force that may be used in response",
+          "The less resistance an officer faces, the less force the officer should use",
+          "If the individual's resistance diminishes, the officer shall immediately reduce the level of force used",
+          "If the individual stops resisting entirely, the officer must immediately cease using force",
+          "Force must always be objectively reasonable, necessary, and proportional to the threat faced"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: The force continuum is not a rigid, step-by-step progression. Officers may need to immediately employ a higher level of force based on the totality of circumstances, including the immediacy and severity of the threat."
+      }
+    ],
+    "images": [
+      "../images/slide23.png"
+    ]
+  },
+  "slide_24": {
+    "title": "Key Definitions: Bodily Injury and Serious Bodily Injury",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Injury Classifications",
+        "content": "The distinction between bodily injury and serious bodily injury is critical in use of force decision-making, as it affects the level of force that may be justified in a given situation."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Injuries creating substantial risk of death",
+          "Significant or permanent disfigurement",
+          "Dismemberment",
+          "Significant bone fractures",
+          "Loss of consciousness",
+          "Protracted loss or impairment of function of any bodily member or organ",
+          "Significant internal injuries"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Importance in Use of Force Decisions",
+        "items": [
+          "Deadly Force Justification: Deadly force may only be used when the officer reasonably believes that such action is immediately necessary to protect the officer or another person from imminent danger of death or serious bodily injury.",
+          "Enhanced Mechanical Force: Enhanced mechanical force (such as CEDs) may be used against threatening assailants who may cause bodily injury (not necessarily serious bodily injury).",
+          "Reporting Requirements: Any use of force resulting in serious bodily injury must be immediately reported to the Chief of Police and the Cape May County Prosecutor's Office.",
+          "Administrative Review: An officer involved in a use of force incident where death or serious injury occurs shall be reassigned to administrative duties pending review of the incident."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Critical Distinction: Understanding the difference between bodily injury and serious bodily injury helps officers make appropriate decisions about the level of force that is reasonable, necessary, and proportional in a given situation."
+      }
+    ],
+    "images": [
+      "../images/slide24.png"
+    ]
+  },
+  "slide_25": {
+    "title": "Key Definitions: Imminent Danger",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Imminent Danger",
+        "content": "Imminent danger is a critical concept in use of force decision-making, particularly when considering the use of deadly force or enhanced mechanical force."
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Immediacy: The threat is about to happen or is in the process of happening",
+          "Capability: The subject has the means to carry out the threatened harm",
+          "Opportunity: The subject is in a position to carry out the threatened harm",
+          "Intent: The subject's actions or words indicate a willingness to cause harm",
+          "Jeopardy: The officer or another person is at risk of death or serious bodily injury"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Importance in Use of Force Decisions",
+        "items": [
+          "Deadly Force: An officer may use deadly force only when the officer reasonably believes that such action is immediately necessary to protect the officer or another person from imminent danger of death or serious bodily injury.",
+          "Threatening vs. Active Assailant: When dealing with an individual who poses a threat to the officer, the individual could be considered either a threatening assailant or an active assailant. To determine the individual's status for appropriate officer response, the officer must assess whether the threat poses an imminent danger. If the threat is imminent, then that individual is considered an active assailant.",
+          "Reasonable Belief: The officer's assessment of imminent danger must be based on a reasonable belief, which is an objective assessment based upon an evaluation of how a reasonable officer with comparable training and experience would react to, or draw inferences from, the facts and circumstances confronting and known by the officer at the scene."
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide25.png"
+    ]
+  },
+  "slide_26": {
+    "title": "Key Definitions: Feasible and Proportional Force",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Feasibility and Proportionality",
+        "content": "The concepts of feasibility and proportional force are essential components of the Cape May Police Department's use of force policy, guiding officers in making appropriate decisions about when and how to use force."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "What is feasible in one situation may not be feasible in another",
+          "Feasibility depends on the totality of the circumstances",
+          "Time constraints may impact what is feasible",
+          "Available resources affect feasibility",
+          "Officer safety considerations must be taken into account",
+          "Public safety must be maintained"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Relationship Between Feasibility and Proportionality",
+        "items": [
+          "Officers must use the least amount of force that is feasible in the circumstances",
+          "The force used must be proportional to the threat or resistance encountered",
+          "Officers must continuously reassess both what is feasible and what is proportional as the situation evolves",
+          "If a less forceful alternative is feasible and would achieve the same objective, that alternative should be used",
+          "If the level of resistance changes, the proportional force response must also change"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: Officers shall use the least amount of force that is objectively reasonable, necessary, and proportional to safely achieve the legitimate law enforcement objective under the circumstances."
+      }
+    ],
+    "images": [
+      "../images/slide26.png"
+    ]
+  },
+  "slide_27": {
+    "title": "Key Definitions: Reasonable Belief",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Reasonable Belief",
+        "content": "Reasonable belief is a foundational concept in use of force decision-making, serving as the standard by which officer actions are evaluated."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Immediacy and severity of the threat",
+          "Subject's actions and behavior",
+          "Officer's perception of the subject's intentions",
+          "Subject's proximity to weapons",
+          "Environmental conditions (lighting, weather, terrain)",
+          "Number of subjects vs. number of officers",
+          "Size, age, and physical capabilities of the subject compared to the officer"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Legal Foundation",
+        "items": [
+          "Graham v. Connor (1989): Established that use of force must be objectively reasonable based on the facts and circumstances confronting the officer, without regard to the officer's underlying intent or motivation.",
+          "Tennessee v. Garner (1985): Established that deadly force may not be used unless it is necessary to prevent the escape of a fleeing felon who poses a significant threat of death or serious physical injury to the officer or others."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Important Note: The reasonable belief standard recognizes that law enforcement officers are often forced to make split-second judgments in circumstances that are tense, uncertain, and rapidly evolving. The assessment of reasonableness must allow for the fact that police officers are often forced to make difficult decisions with limited information in dangerous situations."
+      }
+    ],
+    "images": [
+      "../images/slide27.png"
+    ]
+  },
+  "slide_28": {
+    "title": "Prohibited Techniques: Chokeholds",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Prohibited Neck Restraints",
+        "content": "Chokeholds and similar neck restraint techniques are classified as deadly force and are prohibited except in extraordinary circumstances when the officer's life is in danger and deadly force is authorized."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Can cause death or serious bodily injury",
+          "May lead to unconsciousness within seconds",
+          "Can cause damage to the trachea, larynx, or cervical spine",
+          "May trigger cardiac arrest or stroke",
+          "Particularly dangerous for individuals with pre-existing medical conditions",
+          "Difficult to apply with precision in dynamic situations",
+          "Effects can be unpredictable and vary between individuals"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Extraordinary Circumstances Exception",
+        "items": [
+          "The officer's life is in danger",
+          "Deadly force is authorized",
+          "No other means of defense are available"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Legal and Policy Context",
+        "items": [
+          "New Jersey state law and Attorney General directives",
+          "The principle that deadly force should only be used as an absolute last resort",
+          "The duty to respect and preserve human life",
+          "The requirement to use only objectively reasonable, necessary, and proportional force"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Critical Warning: Under no circumstances shall an officer use a chokehold, or any lesser contact with the neck area, in order to prevent the destruction of evidence by ingestion."
+      }
+    ],
+    "images": [
+      "../images/slide28.png"
+    ]
+  },
+  "slide_29": {
+    "title": "Crowd Management Considerations",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Use of Force in Crowd Situations",
+        "content": "The Cape May Police Department has specific restrictions and limitations on the use of force during peaceful demonstrations and civil disturbances. These guidelines help ensure appropriate responses while respecting constitutional rights."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Provide clear instructions and warnings in a manner that can be heard by persons in the crowd, such as through a bullhorn or speaker system when available",
+          "State the consequences of refusing to comply with a mandatory directive, including that arrests will occur and force may be used unless persons comply",
+          "Give a reasonable opportunity to comply"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "High-volume OC Delivery Systems",
+        "items": [
+          "Bodily injury",
+          "Significant property damage",
+          "Looting",
+          "Other criminal acts"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Important Note: Force may be used against specific individuals in a crowd for lawful purposes in accordance with the other provisions of the Use of Force Policy. The focus should always be on addressing specific unlawful behavior rather than taking action against an entire crowd."
+      }
+    ],
+    "images": [
+      "../images/slide29.png"
+    ]
+  },
+  "slide_30": {
+    "title": "Module 2 Summary",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Key Concepts from Module 2: Definitions and Classifications",
+        "content": "This module covered essential terminology and classifications that form the foundation of the Cape May Police Department's Use of Force policy."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Bodily Injury: Physical pain, temporary disfigurement, or impairment",
+          "Serious Bodily Injury: Injury creating substantial risk of death, permanent disfigurement, or protracted loss of function",
+          "Imminent Danger: Threatened actions immediately likely to occur",
+          "Feasible: Reasonably capable of being accomplished given circumstances",
+          "Proportional Force: Minimum force necessary to control situation",
+          "Reasonable Belief: Objective assessment based on facts known at the time"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Core Principles Review",
+        "items": [
+          "Sanctity of Human Life: Officers shall make every effort to preserve and protect human life",
+          "Force as Last Resort: Force shall only be used as a last resort when necessary",
+          "Reasonable Force: Officers shall use only objectively reasonable, necessary, and proportional force",
+          "Deadly Force as Last Resort: Deadly force shall only be used as an absolute last resort"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Next Module: Module 3 will cover Procedures and Techniques, including de-escalation techniques, critical decision-making, force continuum application, and special considerations for subjects with mental health issues or other conditions affecting compliance."
+      }
+    ],
+    "images": [
+      "../images/slide30.png"
+    ]
+  },
+  "slide_31": {
+    "title": "Module 3: Procedures and Techniques",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "De-escalation techniques in practice",
+          "Critical decision-making model application",
+          "Force continuum implementation"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide31.png"
+    ]
+  },
+  "slide_32": {
+    "title": "De-escalation Techniques in Practice",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Applying De-escalation Effectively",
+        "content": "De-escalation is the action of communicating verbally or nonverbally to reduce, stabilize, or eliminate the immediacy of a threat. When properly applied, these techniques can prevent the need to use force or reduce the level of force necessary."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Tone and Pitch Control: Speak slowly in a calm, measured voice",
+          "Simple Commands: Use clear, concise language",
+          "One Officer Speaking: Designate a single officer as the communicator",
+          "Active Listening: Show genuine interest in the subject's concerns",
+          "Introduce Yourself: \"My name is Officer [Name]. I'm here to help.\"",
+          "Explain Actions: \"I'm doing this because...\"",
+          "Offer Options: Present choices rather than ultimatums when possible"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "De-escalation Scenario Examples",
+        "items": []
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: Officers should not default to attempting to resolve the incident immediately if slowing down the pace is viable and can be accomplished without creating an immediate threat to the public or placing officers in unreasonable danger."
+      }
+    ],
+    "images": [
+      "../images/slide32.png"
+    ]
+  },
+  "slide_33": {
+    "title": "Critical Decision-Making Model Application",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Applying the Critical Decision-Making Model",
+        "content": "The Critical Decision-Making Model (CDM) is an organized way of making decisions about how an officer will act in any situation, including those that may involve potential uses of force."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Begin critical assessment and planning prior to arriving at the scene",
+          "Gather information from dispatch, witnesses, and observations",
+          "Consider what is known and what is unknown",
+          "Identify potential resources needed (backup, specialized units)"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "CDM in Practice: Scenario Example",
+        "items": [
+          "Collect Information: Dispatch reports the subject is yelling and appears agitated. No weapons reported. Officer observes subject pacing and talking to themselves.",
+          "Assess Threats/Risks: Subject does not appear to be threatening others but is in distress. Possible mental health crisis. Park has families present.",
+          "Authority/Limitations: Officer has authority to contact subject for welfare check. Mental health resources available through dispatch.",
+          "Options/Best Course: Approach calmly, maintain distance, use de-escalation techniques, request mental health resources.",
+          "Act/Reassess: Officer approaches, introduces self, speaks calmly. Subject responds positively to de-escalation. Officer continues to monitor while waiting for mental health team."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: The CDM is not linear—it's a continuous process. Officers should constantly reassess as new information becomes available and conditions change. The core values of ethics, professionalism, and the sanctity of human life should guide every decision."
+      }
+    ],
+    "images": [
+      "../images/slide33.png"
+    ]
+  },
+  "slide_34": {
+    "title": "Force Continuum Implementation",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Applying the Force Continuum in Real Situations",
+        "content": "The force continuum provides a framework for officers to select the appropriate level of force based on the subject's behavior. Proper implementation requires continuous assessment and adjustment as the situation evolves."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Dynamic Assessment: Continuously evaluate the subject's behavior and level of resistance",
+          "Proportional Response: Match your force response to the level of resistance encountered",
+          "De-escalation: Reduce force as resistance decreases",
+          "Communication: Maintain verbal commands throughout the encounter",
+          "Documentation: Record all force used and the justification for each level"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Scenario-Based Application",
+        "items": [
+          "Initial Assessment: Subject is a passive resistor (refusing commands but not physically resisting)",
+          "Appropriate Response: Verbal commands, explanation of legal requirements, clear consequences of non-compliance",
+          "Scenario Evolution 1: Subject complies after explanation → De-escalate to cooperative person level",
+          "Scenario Evolution 2: Subject exits vehicle and attempts to walk away → Escalate to active resistor response (control holds)",
+          "Scenario Evolution 3: Subject becomes compliant after being detained → De-escalate force while maintaining control"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: The force continuum is not a rigid, step-by-step progression. It is a flexible framework that guides decision-making based on the totality of circumstances. Officers must continuously assess and adjust their force response as the situation evolves."
+      }
+    ],
+    "images": [
+      "../images/slide34.png"
+    ]
+  },
+  "slide_35": {
+    "title": "Mental Health Considerations",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Special Considerations for Mental Health Crises",
+        "content": "Encounters with individuals experiencing mental health crises require specialized approaches to de-escalation and force considerations. Officers must recognize signs of mental illness and adapt their response accordingly."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Disorientation or confusion",
+          "Unusual or rapid speech patterns",
+          "Inappropriate emotional responses",
+          "Hallucinations or delusions",
+          "Paranoia or extreme suspicion",
+          "Impaired decision-making",
+          "Extreme agitation or withdrawal",
+          "Statements about suicide or self-harm",
+          "Bizarre or irrational behavior"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Legal Considerations",
+        "items": [
+          "Americans with Disabilities Act (ADA): Mental illness may qualify as a disability requiring reasonable accommodations in police interactions",
+          "Involuntary Commitment: Understand criteria and procedures for emergency psychiatric evaluation",
+          "Use of Force Justification: Mental illness alone does not justify increased force, but may require modified approaches",
+          "Duty of Care: Officers have a responsibility to recognize and respond appropriately to mental health crises"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Scenario Example",
+        "items": [
+          "Maintain safe distance and observe behavior",
+          "Request CIT officer and/or mental health resources",
+          "Use calm, clear communication with simple directions",
+          "Avoid rushing the interaction or forcing compliance unnecessarily",
+          "Focus on de-escalation rather than enforcement when possible",
+          "Consider whether the person needs medical or psychiatric assistance rather than arrest"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: The goal in mental health crisis situations is to resolve the encounter safely for all involved, connect the person with appropriate resources, and avoid unnecessary use of force or criminal charges when possible. Mental illness is a medical condition, not a crime."
+      }
+    ],
+    "images": [
+      "../images/slide35.png"
+    ]
+  },
+  "slide_36": {
+    "title": "Tactical Positioning and Communication",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Effective Positioning and Communication Strategies",
+        "content": "Proper tactical positioning and communication techniques can significantly reduce the need for physical force by creating time and distance advantages that enhance officer safety and facilitate de-escalation."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Contact/Cover: One officer communicates while another maintains security",
+          "Reactionary Gap: Maintain 6-8 feet distance when possible",
+          "Tactical L or V: Position at angles rather than directly in front",
+          "Triangulation: Multiple officers position at different angles",
+          "High Ground: Position at elevation advantage when available",
+          "Cover vs. Concealment: Utilize physical barriers that stop bullets (cover) or hide position (concealment)"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Communication Models",
+        "items": [
+          "Ask: Make a professional request",
+          "Set Context: Explain why you're making the request",
+          "Present Options: Good choices vs. poor choices",
+          "Confirm: Ask if they understand",
+          "Act: Take appropriate action based on response",
+          "Ask: Professional tone",
+          "Tell: Command voice",
+          "Challenge: Present options and consequences",
+          "Warning: Final opportunity to comply",
+          "Action: Appropriate force response"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Tactical Considerations for Special Populations",
+        "items": [
+          "Hearing Impaired: Position in full view, use visual cues, consider written communication",
+          "Limited English: Simple commands, universal gestures, translator when available",
+          "Mental Illness: Increased distance, reduce stimuli, slow pace, clear communication",
+          "Elderly/Disabled: Adjust expectations for movement, provide additional time to comply",
+          "Children: Lower positioning to eye level, simplified language, non-threatening approach"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Making advantageous uses of position, distance, and cover to reduce the risk of injury and avoid or reduce the need to use force."
+      },
+      {
+        "type": "paragraph",
+        "content": "Verbal communication techniques that are designed to avoid or minimize the use of force."
+      }
+    ],
+    "images": [
+      "../images/slide36.png",
+      "../images/slide36.2.png"
+    ]
+  },
+  "slide_37": {
+    "title": "Defensive Tactics and Pain Compliance",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Proper Application of Control Techniques",
+        "content": "Defensive tactics and pain compliance techniques are physical control methods that may be effective in controlling passive or active resistors. These techniques must be applied properly, with consideration for their effectiveness and potential for injury."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Potential for injury to officer(s) or others if technique is not used",
+          "Potential risk of serious injury to the individual being controlled",
+          "Effectiveness of the technique in achieving appropriate control",
+          "Whether a different technique should be employed",
+          "Nature of the offense involved",
+          "Level of resistance of the individual(s)",
+          "Whether immediate resolution is necessary"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Transitioning Between Control Techniques",
+        "items": [
+          "Recognition: Quickly identify when a technique is not working",
+          "Communication: Verbalize to partners when transitioning",
+          "Coordination: Work together with other officers during transitions",
+          "Control: Maintain control during the transition between techniques",
+          "Escalation/De-escalation: Move up or down the force continuum as appropriate"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "After Control is Achieved",
+        "items": [
+          "Secure: Properly handcuff or otherwise secure the subject",
+          "Position: Place the subject in a recovery position that does not impede breathing",
+          "Assess: Check for injuries or medical distress",
+          "Monitor: Continuously observe the subject's condition",
+          "Document: Record the techniques used, reason for use, and subject's response"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Officers may only utilize pain compliance techniques that the officer has received department approved training on and only when the officer reasonably believes that the use of such a technique is necessary to further a legitimate law enforcement purpose."
+      },
+      {
+        "type": "paragraph",
+        "content": "Important: The application of any pain compliance technique shall be immediately discontinued once the officer determines that compliance has been achieved or other more appropriate alternatives can be reasonably utilized. Always be alert to the risks of positional asphyxiation during and after the application of control techniques."
+      }
+    ],
+    "images": [
+      "../images/slide37.png"
+    ]
+  },
+  "slide_38": {
+    "title": "Module 3 Summary",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Key Concepts from Module 3: Procedures and Techniques",
+        "content": "This module covered essential procedures and techniques for effectively implementing the Cape May Police Department's Use of Force policy in real-world situations."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Communication strategies to reduce tension",
+          "Verbal and non-verbal de-escalation methods",
+          "Active listening and empathy",
+          "Slowing down the pace of encounters",
+          "Creating time and distance"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Integration with Core Principles",
+        "items": [
+          "Sanctity of Human Life: De-escalation techniques and tactical positioning help preserve life by reducing the need for physical force",
+          "Force as Last Resort: The Critical Decision-Making Model helps officers identify alternatives to force",
+          "Reasonable Force: Force continuum implementation ensures proportional response to resistance",
+          "Deadly Force as Last Resort: Proper application of less-lethal options reduces the need for deadly force"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Documentation Considerations",
+        "items": [
+          "De-escalation attempts made before force was used",
+          "Subject's actions and level of resistance",
+          "Officer's assessment of the situation",
+          "Force options considered and why they were accepted or rejected",
+          "Specific techniques used and their effectiveness",
+          "Any injuries or medical treatment provided",
+          "How the incident was resolved"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Next Module: Module 4 will cover Specific Force Options, including detailed information on Conducted Energy Devices (CEDs), less-lethal devices, deadly force requirements, and prohibited uses of force."
+      }
+    ],
+    "images": [
+      "../images/slide38.png"
+    ]
+  },
+  "slide_39": {
+    "title": "Module 4: Specific Force Options",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Conducted Energy Devices (CEDs)",
+          "Less-lethal devices and ammunition",
+          "OC spray and chemical agents"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide39.png"
+    ]
+  },
+  "slide_40": {
+    "title": "Conducted Energy Devices (CEDs)",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Operational Guidelines for CEDs",
+        "content": "Conducted Energy Devices (CEDs) are enhanced mechanical force options that may be utilized against a Threatening Assailant or an Active Assailant. Proper training, deployment, and post-deployment procedures are essential for safe and effective use."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Against passive resistors or active resistors",
+          "For retaliation or punishment",
+          "To prevent property damage",
+          "Against operator of moving vehicle unless deadly force is authorized",
+          "In drive stun mode more than twice unless deadly force would be authorized",
+          "Multiple CEDs discharged upon a person at the same time",
+          "Against handcuffed subjects unless deadly force would be authorized and physical/mechanical force is not feasible"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Medical Considerations",
+        "items": [
+          "The subject requests medical attention",
+          "The subject had been rendered unconscious or unresponsive",
+          "The subject, after being subjected to a discharge, does not appear to have recovered normally",
+          "The subject has exhibited signs of excited delirium",
+          "The subject has suffered bodily injury requiring medical attention",
+          "The subject was exposed to three or more discharges",
+          "The subject has been exposed to a continuous discharge lasting 15 seconds or more",
+          "No one present is qualified to remove CED darts/electrodes",
+          "An officer has trouble removing a dart/electrode",
+          "Any part of a CED dart/electrode has broken off and remains embedded"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Documentation and Reporting",
+        "items": [
+          "Electronic Use of Force Report through the Attorney General's Use of Force Reporting Portal",
+          "Conducted Energy Device Deployment Review Report",
+          "Investigation Report and/or Supplemental Report",
+          "Information stored in the device concerning its use",
+          "Time the weapon was fired",
+          "Time of all electrical discharges",
+          "BWC recordings of the firing and discharges"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: CEDs are enhanced mechanical force options that should only be used when necessary and justified. Officers shall reevaluate the situation and reassess the need to use force before any second or subsequent firing or discharge against the same person."
+      }
+    ],
+    "images": [
+      "../images/slide40.png"
+    ]
+  },
+  "slide_41": {
+    "title": "Deadly Force Requirements",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Deadly Force Authorization",
+        "content": "Deadly force shall only be used as an absolute last resort and in strict compliance with department policy. Officers must understand the specific requirements that must be met before deadly force may be used."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Firearms: Discharging a firearm at a person",
+          "Neck Restraints: Applying a chokehold, carotid artery restraint, or similar technique that involves pressure on the neck",
+          "Positional Asphyxia Risk: Sitting, kneeling, or standing on a person's chest, back, or neck for a prolonged period of time",
+          "Vehicle Tactics: Intentionally driving a vehicle at or in the direction of a person with the intent to strike the individual",
+          "Impact Weapons: Using a baton or other weapon to intentionally strike an individual in the head or neck area"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Fleeing Suspects",
+        "items": [
+          "Clear evidence that the suspect poses an ongoing threat of death or serious bodily injury",
+          "Reasonable belief that the suspect's escape would endanger others",
+          "No reasonable alternative means to apprehend the suspect safely"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Moving Vehicles",
+        "items": [
+          "Officers shall never intentionally position themselves in the path of a moving vehicle or a vehicle that is likely to move",
+          "Officers shall make every effort to move out of the path of a vehicle to maintain their safety",
+          "Officers shall not grab onto moving vehicles or the drivers or occupants of moving vehicles",
+          "If a vehicle begins to move while an officer is engaged with the driver or an occupant, the officer shall, if feasible, disengage from the contact",
+          "When there is imminent danger of death or serious bodily injury to the officer or another person, created by a person in the vehicle using means other than the vehicle, such as when shots are being fired from the vehicle",
+          "When the suspect is driving their vehicle toward persons other than the officer in a manner creating an imminent threat of death or serious bodily injury, such as in a terrorist attack",
+          "When the officer is being dragged or carried by the vehicle, cannot disengage from the vehicle, and is in imminent danger of death or serious bodily injury"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Critical Reminder: Deadly force is an absolute last resort. Officers must exhaust all other reasonable means before resorting to deadly force. The decision to use deadly force must be based on the facts and circumstances known to the officer at the time, not on information learned later."
+      }
+    ],
+    "images": [
+      "../images/slide41.png"
+    ]
+  },
+  "slide_42": {
+    "title": "Less-Lethal Devices and Ammunition",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Less-Lethal Force Options",
+        "content": "Less-lethal devices and ammunition provide officers with enhanced mechanical force options that are designed to temporarily incapacitate a subject without causing death or serious bodily injury when properly deployed."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Impact projectiles (foam, rubber, or plastic)",
+          "Bean bag rounds",
+          "Baton rounds",
+          "Sponge grenades"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Deployment Procedures",
+        "items": [
+          "When it can be reasonably accomplished without increasing danger, advise other officers at the scene prior to discharge",
+          "This minimizes the possibility that the firing would provoke other officers to discharge their weapons",
+          "Assess the subject's position and surroundings for risks (elevated surfaces, water, etc.)",
+          "Consider distance to target and manufacturer's recommended range",
+          "Ensure proper weapon selection and ammunition loading",
+          "Maintain proper distance according to manufacturer specifications",
+          "Target approved areas of the body",
+          "Continually evaluate the options selected against changing circumstances",
+          "Reassess the need for force before any second or subsequent firing",
+          "Secure the subject",
+          "Assess for injuries",
+          "Provide medical care as needed",
+          "Transport to medical facility for examination if subject suffers bodily injury or requests medical treatment",
+          "Document the use of force thoroughly"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Prohibited Uses",
+        "items": [
+          "Less-lethal devices or ammunition shall not be used in a crowd management situation except against specific threatening assailants or active assailants",
+          "Less-lethal devices or ammunition shall not be used to prevent a person from causing property damage",
+          "A less-lethal device shall not be directed against a person who is situated on an elevated surface unless reasonable efforts have been made to prevent or minimize a fall-related injury",
+          "The use of other than less-lethal ammunition in designated weapons is prohibited unless immediately necessary to protect the life of an officer or other person, and there is no other means available"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "An officer authorized to use a less-lethal device may fire or discharge the device during an actual operation, only against:"
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: Less-lethal does not mean non-lethal. These devices can cause serious injury or death if improperly used. Officers must be properly trained, follow manufacturer guidelines, and continuously reassess the situation during deployment."
+      }
+    ],
+    "images": [
+      "../images/slide42.png"
+    ]
+  },
+  "slide_43": {
+    "title": "OC Spray and Chemical Agents",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Oleoresin Capsicum (OC) Spray",
+        "content": "OC spray is a mechanical force option that uses capsaicin-based inflammatory agents to cause temporary discomfort and disorientation. When properly used, it can help officers control subjects with minimal risk of injury to all parties."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Spray directly into the target's face",
+          "Direct spray to the eyes, nose, and mouth",
+          "Apply from as close as safely possible",
+          "Use short one-half to one-second bursts",
+          "Follow manufacturer's recommendations",
+          "Maintain safe distance to avoid contamination",
+          "Be aware of wind direction and environmental factors"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Special Considerations",
+        "items": [
+          "Mentally Disturbed Persons: May not respond to pain or discomfort",
+          "Intoxicated Persons: May have diminished sensitivity to effects",
+          "Excited Delirium: May be ineffective due to elevated pain threshold",
+          "Highly Motivated Individuals: May fight through the effects",
+          "Environmental Factors: Wind, rain, or extreme temperatures may reduce effectiveness",
+          "Ventilation systems may spread OC to unintended areas",
+          "Contact with contaminated persons may transfer OC to officers",
+          "Vehicles used to transport exposed subjects may become contaminated",
+          "Processing areas may need decontamination after exposure"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Documentation Requirements",
+        "items": [
+          "Justification for OC spray use",
+          "Subject's actions and level of resistance",
+          "Warnings given (if feasible)",
+          "Application method and number of bursts",
+          "Decontamination procedures provided",
+          "Medical treatment requested or provided",
+          "Effectiveness of OC spray",
+          "Any injuries or complaints"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: Once resistance ceases, the further application of OC shall cease. Officers shall remain alert for medical problems or difficulty that the exposed subject may experience and monitor for positional asphyxiation."
+      }
+    ],
+    "images": [
+      "../images/slide43.png"
+    ]
+  },
+  "slide_44": {
+    "title": "Impact Weapons and Techniques",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Tactical Batons and Impact Techniques",
+        "content": "Impact weapons, primarily batons, are defensive tools that may be used when the justification for the use of mechanical force exists. These tools require proper training and technique to be used safely and effectively."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "When mechanical force is necessary and justified",
+          "To overcome resistance directed at the officer or others",
+          "To protect the officer or third party from unlawful force",
+          "To prevent physical harm to the officer or another person",
+          "As a control device for non-impact pressure techniques"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Effectiveness Considerations",
+        "items": [
+          "Clothing: Heavy or bulky clothing may reduce impact effectiveness",
+          "Subject Size: Larger subjects may be less affected by strikes",
+          "Drugs/Alcohol: Intoxicated subjects may have reduced pain sensitivity",
+          "Excited Delirium: Subjects may have elevated pain threshold",
+          "Confined Spaces: Limited room to deploy effectively",
+          "Close Quarters: Risk of weapon retention issues"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Documentation Requirements",
+        "items": [
+          "Justification for impact weapon use",
+          "Subject's actions and level of resistance",
+          "Warnings given (if feasible)",
+          "Specific techniques used",
+          "Target areas struck",
+          "Number of strikes",
+          "Effectiveness of techniques",
+          "Medical assessment and treatment",
+          "Any injuries observed or reported"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: Impact weapons are defensive tools. The primary goal is to gain control with minimal injury. Once control is achieved, the use of impact weapons must cease immediately."
+      }
+    ],
+    "images": [
+      "../images/slide44.png"
+    ]
+  },
+  "slide_45": {
+    "title": "Prohibited Uses of Force",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Understanding Force Prohibitions",
+        "content": "The Cape May Police Department strictly prohibits certain uses of force. Understanding these prohibitions is essential for lawful and ethical policing. Violations may result in disciplinary action, up to and including criminal prosecution and/or termination."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Against passive resistors or active resistors",
+          "For retaliation or punishment",
+          "To prevent property damage",
+          "Against operator of moving vehicle unless deadly force is authorized",
+          "In drive stun mode more than twice unless deadly force would be authorized",
+          "Multiple CEDs discharged upon a person at the same time",
+          "Against handcuffed subjects unless deadly force would be authorized and physical/mechanical force is not feasible"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Duty to Intervene and Report",
+        "items": [
+          "Officers must intervene to prevent any use of force that is illegal, excessive, or otherwise inconsistent with department policy",
+          "Intervention may include verbal or physical actions to stop the improper use of force",
+          "Officers must notify a supervisor as soon as possible after observing or learning of improper force",
+          "Officers must submit an individual written report before reporting off duty on the day they become aware of the misconduct",
+          "Supervisors must report the incident to internal affairs",
+          "Retaliation against officers who intervene or report is prohibited"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Consequences of Violations",
+        "items": [
+          "Administrative review",
+          "Disciplinary action",
+          "Remedial training",
+          "Suspension",
+          "Termination",
+          "Criminal prosecution",
+          "Civil liability"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Critical Reminder: The prohibitions outlined in this policy are not exhaustive. Officers must always use sound judgment and ensure that any force used is objectively reasonable, necessary, and proportional to the threat or resistance encountered."
+      }
+    ],
+    "images": [
+      "../images/slide45.png"
+    ]
+  },
+  "slide_46": {
+    "title": "Module 4 Summary",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Key Concepts from Module 4: Specific Force Options",
+        "content": "This module covered the specific force options available to officers, their proper application, and important restrictions and prohibitions that govern their use."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Enhanced mechanical force option",
+          "Authorized only against threatening/active assailants",
+          "Multiple deployment modes (probe, drive stun, spark display)",
+          "Specific prohibitions and safety considerations",
+          "Medical evaluation requirements",
+          "Documentation and reporting procedures"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Force Option Selection Framework",
+        "items": [
+          "Subject Behavior: What level of resistance or threat is being presented?",
+          "Proportionality: What is the minimum force option that will safely resolve the situation?",
+          "Feasibility: What options are reasonably available given the circumstances?",
+          "Safety: What are the risks to the subject, officers, and others?",
+          "Effectiveness: Will the selected option likely achieve the objective?",
+          "Training: Has the officer received proper training on the option?",
+          "Policy Compliance: Does the option comply with department policy and legal requirements?"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Documentation and Reporting",
+        "items": [
+          "Electronic Use of Force Report through the Attorney General's Use of Force Reporting Portal",
+          "Investigation Report and/or Supplemental Report",
+          "Specialized reports for specific force options (e.g., CED Deployment Review Report)",
+          "Documentation of medical assessment and treatment",
+          "Supervisor review and documentation"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Next Module: Module 5 will cover Post-Incident Procedures, including reporting requirements, medical aid, supervisor responsibilities, and administrative review processes."
+      }
+    ],
+    "images": [
+      "../images/slide46.png"
+    ]
+  },
+  "slide_47": {
+    "title": "Module 5: Post-Incident Procedures",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Medical aid requirements",
+          "Reporting procedures",
+          "Documentation standards"
+        ]
+      }
+    ],
+    "images": [
+      "../images/slide47.png"
+    ]
+  },
+  "slide_48": {
+    "title": "Medical Aid Requirements",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Core Principle Six: Duty to Render Medical Assistance",
+        "content": "After any use of force, and when the environment is safe, officers shall promptly render medical assistance to any injured person consistent with the officer's training and shall promptly request emergency medical assistance for that person, if needed or requested."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Sit the subject upright as soon as practicable",
+          "Expose to fresh air and encourage calm breathing",
+          "Flush affected areas with large amounts of fresh water",
+          "Read the department's Decontamination Statement",
+          "Do not apply salves, creams, oils, lotion, grease, or bandages",
+          "Transport to hospital if wearing contact lenses",
+          "Summon medical assistance if:\n                        \n                            Subject has medical problems\n                            Continues to have difficulty after decontamination\n                            Requests medical treatment\n                            Inflammation/discomfort continues beyond 45 minutes",
+          "Subject has medical problems",
+          "Continues to have difficulty after decontamination",
+          "Requests medical treatment",
+          "Inflammation/discomfort continues beyond 45 minutes"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "CED Dart/Electrode Removal",
+        "items": [
+          "An officer is authorized to remove a CED dart/electrode from a subject only if the officer has received training on dart/electrode removal",
+          "Officers are not authorized to remove a CED dart/electrode from any part of the person's head or neck, or when the dart/electrode is in the subject's genitalia, or female breast",
+          "In the absence of exigent circumstances requiring immediate action, only qualified medical personnel can remove a CED dart/electrode from these areas",
+          "Officers shall wear protective gloves during dart/electrode removal",
+          "Darts/electrodes shall be handled as a biohazard risk and secured as evidence"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Transportation and Medical Billing",
+        "items": [
+          "Any person requesting and/or deemed in need of medical attention shall be transported to the nearest available emergency medical treatment center or hospital",
+          "Officers shall contact EMS/BLS to request such transportation assistance",
+          "Officers shall not transport the subject in a department vehicle",
+          "The extent of the injury and the treatment offered/provided shall be documented in the Investigation Report",
+          "The duty to render medical assistance and monitor applies to all officers on scene and continues throughout any transportation and custody of the individual"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: The duty to render medical assistance is a core principle of the Cape May Police Department's Use of Force policy. Providing prompt and appropriate medical care after a use of force incident is not only a legal and ethical obligation but also helps build trust with the community."
+      }
+    ],
+    "images": [
+      "../images/slide48.png"
+    ]
+  },
+  "slide_49": {
+    "title": "Reporting Requirements",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Core Principle Seven: Duty to Report and Review Uses of Force",
+        "content": "Every use of force must be reported and receive a meaningful/administrative command level review as set forth in a written department policy that includes review by the law enforcement executive."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "A superior officer shall investigate the circumstances and outcome",
+          "A superior officer designated by the Chief shall prepare a report regarding the information stored in the device",
+          "Report must contain information related to the time the weapon was fired, the time of all electrical discharges, and BWC recordings",
+          "Information shall be preserved consistent with retention schedules",
+          "The superior officer shall forward the report to the Chief of Police",
+          "The Chief of Police shall issue a finding on whether the firing and discharges complied with policy",
+          "The Chief of Police shall forward the case report, CED data log(s), and any associated recording(s) to the County Prosecutor within 10 business days"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Reporting Prohibited Uses of Force",
+        "items": [
+          "Notify a supervisor as soon as possible",
+          "Submit an individual written report to a supervisor as soon as possible on the day the officer becomes aware of this incident"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Report Content Requirements",
+        "items": [
+          "The reason for the initial police presence",
+          "A specific description of the acts that led to the use of force",
+          "The level of resistance encountered",
+          "A description of every type of force used",
+          "De-escalation efforts attempted",
+          "Use of warnings before force was used",
+          "Injuries sustained by the subject and/or officer",
+          "Medical care provided or offered",
+          "Names and contact information of witnesses",
+          "Name and badge number of all officers involved",
+          "Name of supervisor notified and time of notification"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: Thorough and accurate reporting is essential for transparency, accountability, and continuous improvement. Reports should be completed promptly and should contain all relevant details about the use of force incident."
+      }
+    ],
+    "images": [
+      "../images/slide49.png"
+    ]
+  },
+  "slide_50": {
+    "title": "Administrative Review Process",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Meaningful Review of Use of Force",
+        "content": "A thorough and meaningful review of use of force incidents is vital to ensuring a positive law enforcement and community relationship. Every use of force must undergo the procedures outlined below for a meaningful command level review."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "expandable-section",
+        "header": "Annual Review of Department Use of Force",
+        "items": [
+          "Analytical reports from the Attorney General's Use of Force Portal",
+          "An audit of body worn cameras and other videos on a risk-based and randomly selected basis",
+          "Any internal affairs complaints",
+          "An analysis of the uses of force to ensure that force is being applied without discrimination"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Officer Support and Wellness",
+        "items": [
+          "Officers should be afforded the appropriate level of critical incident stress debriefing or counseling in accordance with agency policy",
+          "The officer may be assigned to administrative duties or placed on administrative leave as soon as practicable following the incident pending a complete investigation and review of the incident",
+          "This administrative assignment is not disciplinary in nature but is designed to allow time for the officer to process the incident and receive appropriate support"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: The review process is designed to ensure accountability, identify training needs, improve policies and procedures, and maintain public trust. It is not solely focused on discipline but on continuous improvement of the department's use of force practices."
+      }
+    ],
+    "images": [
+      "../images/slide50.png"
+    ]
+  },
+  "slide_51": {
+    "title": "Module 5 Summary",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Key Concepts from Module 5: Post-Incident Procedures",
+        "content": "This module covered the essential procedures that must be followed after any use of force incident, including medical aid, reporting, and administrative review processes."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "Multi-level supervisor review (at least two levels)",
+          "Comprehensive examination of all available evidence",
+          "Non-discrimination analysis",
+          "Recommendations for appropriate action",
+          "Training analysis with involved officers",
+          "Chief's review and approval/rejection of recommendations",
+          "Special procedures for incidents involving:\n                        \n                            Death or serious injury\n                            Chief of Police use of force\n                            Criminal investigations",
+          "Death or serious injury",
+          "Chief of Police use of force",
+          "Criminal investigations",
+          "Annual department-wide use of force review"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Integration with Core Principles",
+        "items": [
+          "Core Principle Six: Duty to Render Medical Assistance - After any use of force, and when the environment is safe, officers shall promptly render medical assistance to any injured person consistent with the officer's training and shall promptly request emergency medical assistance for that person, if needed or requested.",
+          "Core Principle Seven: Duty to Report and Review Uses of Force - Every use of force must be reported and receive a meaningful/administrative command level review as set forth in a written department policy that includes review by the law enforcement executive."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: Proper post-incident procedures are essential for maintaining public trust, ensuring accountability, identifying training needs, and continuously improving the department's use of force practices. These procedures help demonstrate the department's commitment to transparency and the sanctity of human life."
+      }
+    ],
+    "images": [
+      "../images/slide51.png"
+    ]
+  },
+  "slide_52": {
+    "title": "Conclusion and Key Takeaways",
+    "textContent": [
+      {
+        "type": "highlight-box",
+        "title": "Cape May Police Department Use of Force Policy",
+        "content": "This training has provided a comprehensive overview of the Cape May Police Department's Use of Force policy, emphasizing the core principles, procedures, and techniques that guide the appropriate application of force."
+      },
+      {
+        "type": "highlight-box",
+        "title": "",
+        "content": ""
+      },
+      {
+        "type": "bullet-list",
+        "items": [
+          "De-escalation First: Officers shall exhaust all other reasonable means to gain compliance before resorting to force, if feasible",
+          "Proportional Response: The level of force must be proportional to the level of resistance or threat encountered",
+          "Continuous Assessment: Officers must continuously assess the effectiveness, proportionality, and necessity of their actions",
+          "Duty to Intervene: All officers have an affirmative duty to prevent excessive force by fellow officers",
+          "Medical Aid: Prompt medical attention must be provided after any use of force",
+          "Thorough Documentation: All uses of force must be properly reported and documented",
+          "Meaningful Review: Every use of force incident must undergo a thorough administrative review"
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "header": "Resources and References",
+        "items": [
+          "Cape May Police Department General Order on Use of Force",
+          "New Jersey Attorney General's Use of Force Policy",
+          "Attorney General's Use of Force Reporting Portal",
+          "Department Training Division resources",
+          "Critical Incident Stress Management team",
+          "Internal Affairs Unit"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Remember: The Cape May Police Department respects and values the sanctity of human life and the application of deadly force is a measure to be employed only in the most extreme circumstances. Officers whose actions are consistent with the law and the provisions of this policy will be strongly supported by the law enforcement community in any subsequent review of their conduct regarding the use of force."
+      }
+    ],
+    "images": [
+      "../images/slide52.png"
+    ]
+  }
+}

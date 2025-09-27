@@ -54,12 +54,16 @@ export default function SlideEditor() {
   }, [currentSlideId])
 
   const loadSlide = (id) => {
+    console.log(`[SlideEditor] Loading slide ${id}`)
     const slide = getSlide(id)
     if (slide) {
+      console.log(`[SlideEditor] Slide ${id} loaded successfully:`, slide.title)
       setSlideData({ ...slide })
       setOriginalData({ ...slide })
       setHasChanges(false)
       setSaveStatus(null)
+    } else {
+      console.error(`[SlideEditor] Failed to load slide ${id}`)
     }
   }
 
@@ -109,18 +113,28 @@ export default function SlideEditor() {
   }
 
   const handleSave = async () => {
-    if (!hasPermission('write') || !hasChanges) return
+    if (!hasPermission('write') || !hasChanges) {
+      console.log(`[SlideEditor] Save skipped - hasPermission: ${hasPermission('write')}, hasChanges: ${hasChanges}`)
+      return
+    }
 
+    console.log(`[SlideEditor] Saving slide ${currentSlideId}:`, slideData.title)
     setSaving(true)
     try {
       const success = updateSlide(currentSlideId, slideData)
       if (success) {
+        console.log(`[SlideEditor] Slide ${currentSlideId} saved successfully`)
         setOriginalData({ ...slideData })
         setHasChanges(false)
         setSaveStatus('success')
         setTimeout(() => setSaveStatus(null), 3000)
+      } else {
+        console.error(`[SlideEditor] Failed to save slide ${currentSlideId}`)
+        setSaveStatus('error')
+        setTimeout(() => setSaveStatus(null), 3000)
       }
     } catch (error) {
+      console.error(`[SlideEditor] Error saving slide ${currentSlideId}:`, error)
       setSaveStatus('error')
       setTimeout(() => setSaveStatus(null), 3000)
     } finally {
