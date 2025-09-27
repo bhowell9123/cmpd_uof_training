@@ -2,25 +2,35 @@ import { requirePermission } from '../../src/lib/auth'
 import { getSlideById, updateSlide } from '../../src/lib/db'
 
 async function getHandler(req, res) {
-  // Set cache control headers to prevent caching
-  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
-  res.setHeader('Pragma', 'no-cache')
-  res.setHeader('Expires', '0')
-  
   try {
     const { id } = req.query
     const slideId = parseInt(id)
 
     if (isNaN(slideId)) {
-      return res.status(400).json({ error: 'Invalid slide ID' })
+      return res.status(400)
+        .set({
+          'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+          'X-Vercel-Cache-Control': 'no-store'
+        })
+        .json({ error: 'Invalid slide ID' })
     }
 
     const slide = await getSlideById(slideId)
     if (!slide) {
-      return res.status(404).json({ error: 'Slide not found' })
+      return res.status(404)
+        .set({
+          'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+          'X-Vercel-Cache-Control': 'no-store'
+        })
+        .json({ error: 'Slide not found' })
     }
 
-    res.status(200).json({ slide })
+    return res.status(200)
+      .set({
+        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+        'X-Vercel-Cache-Control': 'no-store'
+      })
+      .json({ slide })
   } catch (error) {
     console.error('Error fetching slide:', error)
     res.status(500).json({ error: 'Internal server error' })
@@ -28,11 +38,6 @@ async function getHandler(req, res) {
 }
 
 async function putHandler(req, res) {
-  // Set cache control headers to prevent caching
-  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
-  res.setHeader('Pragma', 'no-cache')
-  res.setHeader('Expires', '0')
-  
   console.log(`[API] PUT request to update slide ${req.query.id}`)
   try {
     const { id } = req.query
@@ -44,12 +49,22 @@ async function putHandler(req, res) {
 
     if (isNaN(slideId)) {
       console.log(`[API] Invalid slide ID: ${id}`)
-      return res.status(400).json({ error: 'Invalid slide ID' })
+      return res.status(400)
+        .set({
+          'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+          'X-Vercel-Cache-Control': 'no-store'
+        })
+        .json({ error: 'Invalid slide ID' })
     }
 
     if (!title) {
       console.log(`[API] Title is required`)
-      return res.status(400).json({ error: 'Title is required' })
+      return res.status(400)
+        .set({
+          'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+          'X-Vercel-Cache-Control': 'no-store'
+        })
+        .json({ error: 'Title is required' })
     }
 
     const updatedSlide = await updateSlide(
@@ -62,11 +77,21 @@ async function putHandler(req, res) {
 
     if (!updatedSlide) {
       console.log(`[API] Slide not found or update failed: ${slideId}`)
-      return res.status(404).json({ error: 'Slide not found' })
+      return res.status(404)
+        .set({
+          'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+          'X-Vercel-Cache-Control': 'no-store'
+        })
+        .json({ error: 'Slide not found' })
     }
 
     console.log(`[API] Slide ${slideId} updated successfully`)
-    res.status(200).json({ slide: updatedSlide })
+    return res.status(200)
+      .set({
+        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+        'X-Vercel-Cache-Control': 'no-store'
+      })
+      .json({ slide: updatedSlide })
   } catch (error) {
     console.error('Error updating slide:', error)
     res.status(500).json({ error: 'Internal server error' })
@@ -84,4 +109,4 @@ async function handler(req, res) {
   }
 }
 
-export default requirePermission('read')(handler)
+export default requirePermission('write')(handler)

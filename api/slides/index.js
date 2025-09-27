@@ -6,19 +6,20 @@ async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  // Set cache control headers to prevent caching
-  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
-  res.setHeader('Pragma', 'no-cache')
-  res.setHeader('Expires', '0')
-
   try {
     const slides = await getAllSlides()
     const modules = await getAllModules()
 
-    res.status(200).json({
-      slides,
-      modules
-    })
+    return res
+      .status(200)
+      .set({
+        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+        'X-Vercel-Cache-Control': 'no-store'
+      })
+      .json({
+        slides,
+        modules
+      })
   } catch (error) {
     console.error('Error fetching slides:', error)
     res.status(500).json({ error: 'Internal server error' })

@@ -1,4 +1,4 @@
-import contentMapping from '../src/assets/content_mapping/content_mapping.json'
+import contentMapping from '../src/assets/content_mapping/content_mapping.json' assert { type: 'json' }
 
 export default function handler(req, res) {
   // Enable CORS
@@ -6,17 +6,22 @@ export default function handler(req, res) {
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS')
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization')
   
-  // Set cache control headers to prevent caching
-  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
-  res.setHeader('Pragma', 'no-cache')
-  res.setHeader('Expires', '0')
-  
   if (req.method === 'OPTIONS') {
-    return res.status(200).end()
+    return res.status(200)
+      .set({
+        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+        'X-Vercel-Cache-Control': 'no-store'
+      })
+      .end()
   }
   
   if (req.method !== 'GET') {
-    return res.status(405).json({ error: 'Method not allowed' })
+    return res.status(405)
+      .set({
+        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+        'X-Vercel-Cache-Control': 'no-store'
+      })
+      .json({ error: 'Method not allowed' })
   }
 
   try {
@@ -78,10 +83,15 @@ export default function handler(req, res) {
       }
     ]
 
-    res.status(200).json({
-      slides,
-      modules
-    })
+    return res.status(200)
+      .set({
+        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
+        'X-Vercel-Cache-Control': 'no-store'
+      })
+      .json({
+        slides,
+        modules
+      })
   } catch (error) {
     console.error('Error fetching slides:', error)
     res.status(500).json({ error: 'Internal server error' })
