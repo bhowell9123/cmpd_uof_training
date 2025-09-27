@@ -2,9 +2,7 @@
   "functions": {
     "api/**/*.js": {
       "runtime": "nodejs20.x",
-      "includeFiles": [
-        "src/assets/content_mapping/content_mapping.json"
-      ]
+      "includeFiles": "src/assets/content_mapping/content_mapping.json"
     }
   }
 }
