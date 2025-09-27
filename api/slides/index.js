@@ -10,24 +10,17 @@ async function handler(req, res) {
     const slides = await getAllSlides()
     const modules = await getAllModules()
 
-    return res
-      .status(200)
-      .set({
-        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
-        'X-Vercel-Cache-Control': 'no-store'
-      })
-      .json({
-        slides,
-        modules
-      })
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0');
+    res.setHeader('X-Vercel-Cache-Control', 'no-store');
+    return res.status(200).json({
+      slides,
+      modules
+    });
   } catch (error) {
     console.error('Error fetching slides:', error)
-    res.status(500)
-      .set({
-        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0',
-        'X-Vercel-Cache-Control': 'no-store'
-      })
-      .json({ error: 'Internal server error' })
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0');
+    res.setHeader('X-Vercel-Cache-Control', 'no-store');
+    res.status(500).json({ error: 'Internal server error' });
   }
 }
 
