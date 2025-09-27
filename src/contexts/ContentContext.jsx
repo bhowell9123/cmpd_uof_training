@@ -92,21 +92,38 @@ export function ContentProvider({ children }) {
 
   const loadContent = async () => {
     try {
+      console.log('[ContentContext] Loading content from API...')
       setLoading(true)
       setError(null)
       
-      // Try the simple endpoint first
-      let response = await fetch('/api/slides-simple', {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-
-      // If simple endpoint fails, try the authenticated endpoint
-      if (!response.ok) {
+      let response;
+      
+      // If authenticated, try the database endpoint first
+      if (isAuthenticated) {
+        console.log('[ContentContext] User is authenticated, trying database endpoint first...')
         response = await fetch('/api/slides', {
           headers: {
             ...getAuthHeaders(),
+            'Content-Type': 'application/json'
+          }
+        })
+        
+        // If database endpoint fails, fall back to simple endpoint
+        if (!response.ok) {
+          console.log('[ContentContext] Database endpoint failed, falling back to simple endpoint...')
+          response = await fetch('/api/slides-simple', {
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          })
+        } else {
+          console.log('[ContentContext] Successfully loaded content from database')
+        }
+      } else {
+        // For unauthenticated users, use the simple endpoint
+        console.log('[ContentContext] User is not authenticated, using simple endpoint...')
+        response = await fetch('/api/slides-simple', {
+          headers: {
             'Content-Type': 'application/json'
           }
         })
@@ -114,6 +131,7 @@ export function ContentProvider({ children }) {
 
       if (response.ok) {
         const data = await response.json()
+        console.log(`[ContentContext] API returned ${data.slides?.length || 0} slides`)
         
         // Transform modules data if needed
         const transformedModules = (data.modules || []).map(module => ({
@@ -124,6 +142,7 @@ export function ContentProvider({ children }) {
         setSlides(data.slides || [])
         setModules(transformedModules.length > 0 ? transformedModules : defaultModules)
         setUseLocalData(false)
+        console.log('[ContentContext] Using API data (useLocalData = false)')
       } else {
         console.warn('API failed, falling back to local content')
         loadLocalContent()
@@ -217,13 +236,16 @@ export function ContentProvider({ children }) {
   }
 
   const updateSlide = async (slideId, slideData) => {
+    console.log(`[ContentContext] Updating slide ${slideId}, useLocalData: ${useLocalData}`)
+    
     // If using local data, just update in memory
     if (useLocalData) {
-      setSlides(prevSlides => 
-        prevSlides.map(slide => 
-          slide.id === slideId 
-            ? { 
-                ...slide, 
+      console.log('[ContentContext] Using local data, updating in memory only')
+      setSlides(prevSlides =>
+        prevSlides.map(slide =>
+          slide.id === slideId
+            ? {
+                ...slide,
                 title: slideData.title,
                 content: slideData.textContent || [],
                 images: slideData.images || []
@@ -235,6 +257,7 @@ export function ContentProvider({ children }) {
     }
 
     try {
+      console.log('[ContentContext] Using API data, sending PUT request to update slide in database')
       const response = await fetch(`/api/slides/${slideId}`, {
         method: 'PUT',
         headers: {
@@ -250,11 +273,12 @@ export function ContentProvider({ children }) {
 
       if (response.ok) {
         const data = await response.json()
+        console.log('[ContentContext] Slide updated successfully in database')
         
         // Update local state
-        setSlides(prevSlides => 
-          prevSlides.map(slide => 
-            slide.id === slideId 
+        setSlides(prevSlides =>
+          prevSlides.map(slide =>
+            slide.id === slideId
               ? { ...slide, ...data.slide }
               : slide
           )
@@ -263,6 +287,7 @@ export function ContentProvider({ children }) {
         return true
       } else {
         const errorData = await response.json()
+        console.error('[ContentContext] Failed to update slide in database:', errorData.error)
         throw new Error(errorData.error || 'Failed to update slide')
       }
     } catch (err) {
