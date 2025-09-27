@@ -87,7 +87,8 @@ export default function SlideEditor() {
 
     const newContent = {
       type,
-      content: type === 'bullet-list' ? [] : '',
+      content: type === 'bullet-list' ? undefined : '',
+      ...(type === 'bullet-list' && { items: [], title: '' }),
       ...(type === 'highlight-box' && { title: '' }),
       ...(type === 'expandable-section' && { header: '', items: [] })
     }
@@ -388,21 +389,24 @@ export default function SlideEditor() {
                       </div>
                     ) : (
                       <div>
-                        <Label>Content</Label>
+                        <Label>{content.type === 'bullet-list' ? 'Items (one per line)' : 'Content'}</Label>
                         <Textarea
                           value={
-                            Array.isArray(content.content)
-                              ? content.content.join('\n')
-                              : content.content || ''
+                            content.type === 'bullet-list'
+                              ? (Array.isArray(content.items) ? content.items.join('\n') : '')
+                              : (Array.isArray(content.content)
+                                ? content.content.join('\n')
+                                : content.content || '')
                           }
                           onChange={(e) => {
                             const value = content.type === 'bullet-list'
                               ? e.target.value.split('\n').filter(line => line.trim())
                               : e.target.value
-                            handleTextContentChange(index, 'content', value)
+                            handleTextContentChange(index, content.type === 'bullet-list' ? 'items' : 'content', value)
                           }}
                           disabled={!hasPermission('write')}
                           rows={4}
+                          placeholder={content.type === 'bullet-list' ? 'Enter each item on a new line' : ''}
                         />
                       </div>
                     )}
@@ -516,7 +520,7 @@ export default function SlideEditor() {
                         
                         {content.type === 'bullet-list' && (
                           <ul className="list-disc list-inside space-y-1">
-                            {(Array.isArray(content.content) ? content.content : []).map((item, i) => (
+                            {(Array.isArray(content.items) ? content.items : []).map((item, i) => (
                               <li key={i} className="text-gray-700">{item}</li>
                             ))}
                           </ul>

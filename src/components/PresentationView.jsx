@@ -222,8 +222,8 @@ export default function PresentationView() {
               )}
             </div>
 
-            {/* Completely remove Visual References section for all slides */}
-            {false && (
+            {/* Visual References section */}
+            {slideData.images && slideData.images.length > 0 && (
               <div className="mb-8">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Visual References</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
