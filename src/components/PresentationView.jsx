@@ -182,11 +182,16 @@ export default function PresentationView() {
                   )}
                   
                   {content.type === 'bullet-list' && (
-                    <ul className="list-disc list-inside space-y-2 text-gray-700">
-                      {(Array.isArray(content.content) ? content.content : []).map((item, i) => (
-                        <li key={i} className="leading-relaxed">{item}</li>
-                      ))}
-                    </ul>
+                    <div>
+                      {content.title && (
+                        <h4 className="font-semibold text-gray-900 mb-2">{content.title}</h4>
+                      )}
+                      <ul className="list-disc list-inside space-y-2 text-gray-700">
+                        {(Array.isArray(content.items) ? content.items : []).map((item, i) => (
+                          <li key={i} className="leading-relaxed">{item}</li>
+                        ))}
+                      </ul>
+                    </div>
                   )}
                   
                   {content.type === 'paragraph' && (

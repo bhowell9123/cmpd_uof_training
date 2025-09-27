@@ -5,10 +5,11 @@
       {
         "type": "highlight-box",
         "title": "Welcome to the CMPD Use of Force Training Program",
-        "content": "This training program is designed to provide officers with comprehensive guidance on the proper application of force in accordance with department policy and legal standards."
+        "content": "The following presentation has been developed to provide officers with guidance regarding the proper application of force in accordance with departmental directives and legal standards."
       },
       {
         "type": "bullet-list",
+        "title": "Training Objectives:",
         "items": [
           "Understand the legal framework governing use of force",
           "Learn to assess threat levels and respond appropriately",
