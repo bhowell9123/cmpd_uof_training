@@ -1,4 +1,6 @@
-import contentMapping from '../src/assets/content_mapping/content_mapping.json' assert { type: 'json' }
+import { readFile } from 'node:fs/promises';
+const mappingPath = new URL('../src/assets/content_mapping/content_mapping.json', import.meta.url);
+const contentMapping = JSON.parse(await readFile(mappingPath, 'utf8'));
 
 export default function handler(req, res) {
   // Enable CORS

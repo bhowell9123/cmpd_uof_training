@@ -1,6 +1,8 @@
 import { sql } from '@vercel/postgres'
 import bcrypt from 'bcryptjs'
-import contentMapping from '../assets/content_mapping/content_mapping.json' assert { type: 'json' }
+import { readFile } from 'node:fs/promises'
+const mappingPath = new URL('../assets/content_mapping/content_mapping.json', import.meta.url)
+const contentMapping = JSON.parse(await readFile(mappingPath, 'utf8'))
 
 // Initialize database tables
 export async function initializeDatabase() {
