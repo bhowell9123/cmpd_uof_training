@@ -276,13 +276,23 @@
       },
       {
         "type": "expandable-section",
-        "header": "Tactical Teams Exception\n                +",
-        "items": []
+        "header": "Tactical Teams Exception",
+        "items": [
+          "Officers assigned to tactical teams may be authorized to keep their firearms drawn while actively searching for armed suspects",
+          "This exception applies only during high-risk operations where there is reasonable belief of imminent threat",
+          "Officers must still holster their weapons as soon as it is safe to do so",
+          "All tactical team operations must follow specific departmental protocols"
+        ]
       },
       {
         "type": "expandable-section",
-        "header": "Conducted Energy Devices (CEDs)\n                +",
-        "items": []
+        "header": "Conducted Energy Devices (CEDs)",
+        "items": [
+          "CEDs may be displayed as a show of force to gain compliance",
+          "A CED spark display (demonstrating the electrical arc without firing) may be used as constructive authority",
+          "Officers must be trained and certified in CED use before displaying or deploying the device",
+          "CED display must be documented in accordance with departmental policy"
+        ]
       }
     ]
   },

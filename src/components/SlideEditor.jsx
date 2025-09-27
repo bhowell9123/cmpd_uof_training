@@ -368,24 +368,44 @@ export default function SlideEditor() {
                       </div>
                     )}
                     
-                    <div>
-                      <Label>Content</Label>
-                      <Textarea
-                        value={
-                          Array.isArray(content.content) 
-                            ? content.content.join('\n') 
-                            : content.content || ''
-                        }
-                        onChange={(e) => {
-                          const value = content.type === 'bullet-list' 
-                            ? e.target.value.split('\n').filter(line => line.trim())
-                            : e.target.value
-                          handleTextContentChange(index, 'content', value)
-                        }}
-                        disabled={!hasPermission('write')}
-                        rows={4}
-                      />
-                    </div>
+                    {content.type === 'expandable-section' ? (
+                      <div>
+                        <Label>Items (one per line)</Label>
+                        <Textarea
+                          value={
+                            Array.isArray(content.items)
+                              ? content.items.join('\n')
+                              : ''
+                          }
+                          onChange={(e) => {
+                            const items = e.target.value.split('\n').filter(line => line.trim())
+                            handleTextContentChange(index, 'items', items)
+                          }}
+                          disabled={!hasPermission('write')}
+                          rows={4}
+                          placeholder="Enter each item on a new line"
+                        />
+                      </div>
+                    ) : (
+                      <div>
+                        <Label>Content</Label>
+                        <Textarea
+                          value={
+                            Array.isArray(content.content)
+                              ? content.content.join('\n')
+                              : content.content || ''
+                          }
+                          onChange={(e) => {
+                            const value = content.type === 'bullet-list'
+                              ? e.target.value.split('\n').filter(line => line.trim())
+                              : e.target.value
+                            handleTextContentChange(index, 'content', value)
+                          }}
+                          disabled={!hasPermission('write')}
+                          rows={4}
+                        />
+                      </div>
+                    )}
                   </div>
                 ))}
                 
