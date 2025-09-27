@@ -22,22 +22,22 @@
     ]
   },
   "slide_02": {
-    "title": "Purpose and Overview",
+    "title": "Training Overview",
     "textContent": [
       {
-        "type": "expandable-section",
-        "header": "Module 2: Force Continuum",
-        "items": []
+        "type": "highlight-box",
+        "title": "Use of Force Training",
+        "content": "The following presentation has been developed to provide officers with guidance regarding the proper application of force in accordance with departmental directives and legal standards."
       },
       {
-        "type": "expandable-section",
-        "header": "Module 3: Decision Making",
-        "items": []
-      },
-      {
-        "type": "expandable-section",
-        "header": "Module 4: De-escalation Techniques",
-        "items": []
+        "type": "bullet-list",
+        "title": "This training covers:",
+        "items": [
+          "Legal framework for use of force",
+          "Departmental policies and procedures",
+          "Proper techniques and decision-making",
+          "Documentation and reporting requirements"
+        ]
       }
     ],
     "images": [
@@ -1159,7 +1159,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Remember: The CDM is not linear—it's a continuous process. Officers should constantly reassess as new information becomes available and conditions change. The core values of ethics, professionalism, and the sanctity of human life should guide every decision."
+        "content": "Remember: The CDM is not linear\u2014it's a continuous process. Officers should constantly reassess as new information becomes available and conditions change. The core values of ethics, professionalism, and the sanctity of human life should guide every decision."
       }
     ],
     "images": [
@@ -1195,9 +1195,9 @@
         "items": [
           "Initial Assessment: Subject is a passive resistor (refusing commands but not physically resisting)",
           "Appropriate Response: Verbal commands, explanation of legal requirements, clear consequences of non-compliance",
-          "Scenario Evolution 1: Subject complies after explanation → De-escalate to cooperative person level",
-          "Scenario Evolution 2: Subject exits vehicle and attempts to walk away → Escalate to active resistor response (control holds)",
-          "Scenario Evolution 3: Subject becomes compliant after being detained → De-escalate force while maintaining control"
+          "Scenario Evolution 1: Subject complies after explanation \u2192 De-escalate to cooperative person level",
+          "Scenario Evolution 2: Subject exits vehicle and attempts to walk away \u2192 Escalate to active resistor response (control holds)",
+          "Scenario Evolution 3: Subject becomes compliant after being detained \u2192 De-escalate force while maintaining control"
         ]
       },
       {
@@ -2026,139 +2026,6 @@
     ],
     "images": [
       "../images/slide49.png"
-    ]
-  },
-  "slide_50": {
-    "title": "Administrative Review Process",
-    "textContent": [
-      {
-        "type": "highlight-box",
-        "title": "Meaningful Review of Use of Force",
-        "content": "A thorough and meaningful review of use of force incidents is vital to ensuring a positive law enforcement and community relationship. Every use of force must undergo the procedures outlined below for a meaningful command level review."
-      },
-      {
-        "type": "highlight-box",
-        "title": "",
-        "content": ""
-      },
-      {
-        "type": "expandable-section",
-        "header": "Annual Review of Department Use of Force",
-        "items": [
-          "Analytical reports from the Attorney General's Use of Force Portal",
-          "An audit of body worn cameras and other videos on a risk-based and randomly selected basis",
-          "Any internal affairs complaints",
-          "An analysis of the uses of force to ensure that force is being applied without discrimination"
-        ]
-      },
-      {
-        "type": "expandable-section",
-        "header": "Officer Support and Wellness",
-        "items": [
-          "Officers should be afforded the appropriate level of critical incident stress debriefing or counseling in accordance with agency policy",
-          "The officer may be assigned to administrative duties or placed on administrative leave as soon as practicable following the incident pending a complete investigation and review of the incident",
-          "This administrative assignment is not disciplinary in nature but is designed to allow time for the officer to process the incident and receive appropriate support"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": "Remember: The review process is designed to ensure accountability, identify training needs, improve policies and procedures, and maintain public trust. It is not solely focused on discipline but on continuous improvement of the department's use of force practices."
-      }
-    ],
-    "images": [
-      "../images/slide50.png"
-    ]
-  },
-  "slide_51": {
-    "title": "Module 5 Summary",
-    "textContent": [
-      {
-        "type": "highlight-box",
-        "title": "Key Concepts from Module 5: Post-Incident Procedures",
-        "content": "This module covered the essential procedures that must be followed after any use of force incident, including medical aid, reporting, and administrative review processes."
-      },
-      {
-        "type": "highlight-box",
-        "title": "",
-        "content": ""
-      },
-      {
-        "type": "bullet-list",
-        "items": [
-          "Multi-level supervisor review (at least two levels)",
-          "Comprehensive examination of all available evidence",
-          "Non-discrimination analysis",
-          "Recommendations for appropriate action",
-          "Training analysis with involved officers",
-          "Chief's review and approval/rejection of recommendations",
-          "Special procedures for incidents involving:\n                        \n                            Death or serious injury\n                            Chief of Police use of force\n                            Criminal investigations",
-          "Death or serious injury",
-          "Chief of Police use of force",
-          "Criminal investigations",
-          "Annual department-wide use of force review"
-        ]
-      },
-      {
-        "type": "expandable-section",
-        "header": "Integration with Core Principles",
-        "items": [
-          "Core Principle Six: Duty to Render Medical Assistance - After any use of force, and when the environment is safe, officers shall promptly render medical assistance to any injured person consistent with the officer's training and shall promptly request emergency medical assistance for that person, if needed or requested.",
-          "Core Principle Seven: Duty to Report and Review Uses of Force - Every use of force must be reported and receive a meaningful/administrative command level review as set forth in a written department policy that includes review by the law enforcement executive."
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": "Remember: Proper post-incident procedures are essential for maintaining public trust, ensuring accountability, identifying training needs, and continuously improving the department's use of force practices. These procedures help demonstrate the department's commitment to transparency and the sanctity of human life."
-      }
-    ],
-    "images": [
-      "../images/slide51.png"
-    ]
-  },
-  "slide_52": {
-    "title": "Conclusion and Key Takeaways",
-    "textContent": [
-      {
-        "type": "highlight-box",
-        "title": "Cape May Police Department Use of Force Policy",
-        "content": "This training has provided a comprehensive overview of the Cape May Police Department's Use of Force policy, emphasizing the core principles, procedures, and techniques that guide the appropriate application of force."
-      },
-      {
-        "type": "highlight-box",
-        "title": "",
-        "content": ""
-      },
-      {
-        "type": "bullet-list",
-        "items": [
-          "De-escalation First: Officers shall exhaust all other reasonable means to gain compliance before resorting to force, if feasible",
-          "Proportional Response: The level of force must be proportional to the level of resistance or threat encountered",
-          "Continuous Assessment: Officers must continuously assess the effectiveness, proportionality, and necessity of their actions",
-          "Duty to Intervene: All officers have an affirmative duty to prevent excessive force by fellow officers",
-          "Medical Aid: Prompt medical attention must be provided after any use of force",
-          "Thorough Documentation: All uses of force must be properly reported and documented",
-          "Meaningful Review: Every use of force incident must undergo a thorough administrative review"
-        ]
-      },
-      {
-        "type": "expandable-section",
-        "header": "Resources and References",
-        "items": [
-          "Cape May Police Department General Order on Use of Force",
-          "New Jersey Attorney General's Use of Force Policy",
-          "Attorney General's Use of Force Reporting Portal",
-          "Department Training Division resources",
-          "Critical Incident Stress Management team",
-          "Internal Affairs Unit"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": "Remember: The Cape May Police Department respects and values the sanctity of human life and the application of deadly force is a measure to be employed only in the most extreme circumstances. Officers whose actions are consistent with the law and the provisions of this policy will be strongly supported by the law enforcement community in any subsequent review of their conduct regarding the use of force."
-      }
-    ],
-    "images": [
-      "../images/slide52.png"
     ]
   }
 }
