@@ -7,7 +7,8 @@
     "api/**/*.js": {
       "runtime": "nodejs20.x",
       "maxDuration": 10,
-      "includeFiles": "src/assets/content_mapping/content_mapping.json"
+      "includeFiles": "src/assets/content_mapping/content_mapping.json",
+      "memory": 1024
     }
   },
   "routes": [
