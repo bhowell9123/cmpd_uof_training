@@ -1,5 +1,5 @@
-import { requirePermission } from '../../src/lib/auth'
-import { getSlideById, updateSlide } from '../../src/lib/db'
+import { requirePermission } from '../../src/lib/auth.js'
+import { getSlideById, updateSlide } from '../../src/lib/db.js'
 
 async function getHandler(req, res) {
   try {

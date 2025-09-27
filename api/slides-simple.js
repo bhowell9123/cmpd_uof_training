@@ -1,6 +1,6 @@
-import { readFile } from 'node:fs/promises';
-const mappingPath = new URL('../src/assets/content_mapping/content_mapping.json', import.meta.url);
-const contentMapping = JSON.parse(await readFile(mappingPath, 'utf8'));
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
+const contentMapping = require('../src/assets/content_mapping/content_mapping.json')
 
 export default function handler(req, res) {
   // Enable CORS

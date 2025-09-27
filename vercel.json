@@ -5,7 +5,9 @@
   "framework": "vite",
   "functions": {
     "api/**/*.js": {
-      "maxDuration": 10
+      "runtime": "nodejs20.x",
+      "maxDuration": 10,
+      "includeFiles": "src/assets/content_mapping/content_mapping.json"
     }
   },
   "routes": [

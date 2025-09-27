@@ -1,4 +1,4 @@
-import { initializeDatabase, seedDatabase } from '../src/lib/db'
+import { initializeDatabase, seedDatabase } from '../src/lib/db.js'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

@@ -1,5 +1,5 @@
-import { requirePermission } from '../../src/lib/auth'
-import { getAllSlides, getAllModules } from '../../src/lib/db'
+import { requirePermission } from '../../src/lib/auth.js'
+import { getAllSlides, getAllModules } from '../../src/lib/db.js'
 
 async function handler(req, res) {
   if (req.method !== 'GET') {
