@@ -1,4 +1,13 @@
 {
+  "slide_00": {
+    "title": "Test Slide Without Images",
+    "textContent": [
+      {
+        "type": "paragraph",
+        "content": "This is a test slide that doesn't have an images property."
+      }
+    ]
+  },
   "slide_01": {
     "title": "Use of Force Training",
     "textContent": [
@@ -17,9 +26,6 @@
           "Recognize the importance of de-escalation techniques"
         ]
       }
-    ],
-    "images": [
-      "../images/slide1.png"
     ]
   },
   "slide_02": {
@@ -40,9 +46,6 @@
           "Documentation and reporting requirements"
         ]
       }
-    ],
-    "images": [
-      "../images/slide2.png"
     ]
   },
   "slide_03": {
@@ -70,9 +73,6 @@
         "type": "paragraph",
         "content": "Officers whose actions are consistent with the law and the provisions of this policy will be strongly supported by the law enforcement community in any subsequent review of their conduct regarding the use of force."
       }
-    ],
-    "images": [
-      "../images/slide3.png"
     ]
   },
   "slide_04": {
@@ -98,9 +98,6 @@
         "header": "Non-Discrimination Requirement",
         "items": []
       }
-    ],
-    "images": [
-      "../images/slide4.png"
     ]
   },
   "slide_05": {
@@ -131,9 +128,6 @@
           "To resolve a situation more quickly, unless delay would risk safety or significantly interfere with legitimate law enforcement objectives"
         ]
       }
-    ],
-    "images": [
-      "../images/slide5.png"
     ]
   },
   "slide_06": {
@@ -160,9 +154,6 @@
         "header": "Strategic Redeployment",
         "items": []
       }
-    ],
-    "images": [
-      "../images/slide6.png"
     ]
   },
   "slide_07": {
@@ -194,10 +185,6 @@
           "Give the suspect a reasonable opportunity to comply"
         ]
       }
-    ],
-    "images": [
-      "../images/slide7.png",
-      "../images/slide7.2.png"
     ]
   },
   "slide_08": {
@@ -218,9 +205,6 @@
         "header": "Excited Delirium Awareness",
         "items": []
       }
-    ],
-    "images": [
-      "../images/slide8.png"
     ]
   },
   "slide_09": {
@@ -253,9 +237,6 @@
           "The potential for injury to officers, suspects, and the public"
         ]
       }
-    ],
-    "images": [
-      "../images/slide9.png"
     ]
   },
   "slide_10": {
@@ -275,9 +256,6 @@
           "Flight from an officer does not, on its own, qualify a person as an assailant."
         ]
       }
-    ],
-    "images": [
-      "../images/slide10.png"
     ]
   },
   "slide_11": {
@@ -306,9 +284,6 @@
         "header": "Conducted Energy Devices (CEDs)\n                +",
         "items": []
       }
-    ],
-    "images": [
-      "../images/slide11.png"
     ]
   },
   "slide_12": {
@@ -353,10 +328,6 @@
         "type": "paragraph",
         "content": "Critical Warning: If the person cannot escape from the position, death may occur very rapidly. Restraint in the prone position presents a significant risk of asphyxia, particularly when a person is handcuffed and left in a face-down position."
       }
-    ],
-    "images": [
-      "../images/slide12.png",
-      "../images/slide12.2.png"
     ]
   },
   "slide_13": {
@@ -386,9 +357,6 @@
           "Officers shall not use deadly force when the use of deadly force creates a substantial risk of injury to innocent persons"
         ]
       }
-    ],
-    "images": [
-      "../images/slide13.png"
     ]
   },
   "slide_14": {
@@ -431,9 +399,6 @@
           "No other means are available at that time to avert or eliminate the danger"
         ]
       }
-    ],
-    "images": [
-      "../images/slide14.png"
     ]
   },
   "slide_15": {
@@ -473,9 +438,6 @@
         "type": "paragraph",
         "content": "Remember: The primary duty of all law enforcement officers is to preserve human life. Only when no other means are available should an officer consider surrendering their weapon."
       }
-    ],
-    "images": [
-      "../images/slide15.png"
     ]
   },
   "slide_16": {
@@ -494,9 +456,6 @@
           "Constructive authority"
         ]
       }
-    ],
-    "images": [
-      "../images/slide16.png"
     ]
   },
   "slide_17": {
@@ -516,9 +475,6 @@
           "Does not physically resist control measures"
         ]
       }
-    ],
-    "images": [
-      "../images/slide17.png"
     ]
   },
   "slide_18": {
@@ -550,9 +506,6 @@
           "Pointing a firearm at a subject (only in appropriate circumstances)"
         ]
       }
-    ],
-    "images": [
-      "../images/slide18.png"
     ]
   },
   "slide_19": {
@@ -594,9 +547,6 @@
           "Two or more CEDs shall not be discharged upon a person at the same time"
         ]
       }
-    ],
-    "images": [
-      "../images/slide19.png"
     ]
   },
   "slide_20": {
@@ -630,10 +580,6 @@
           "The use of physical or mechanical force is not feasible or would be ineffective"
         ]
       }
-    ],
-    "images": [
-      "../images/slide20.png",
-      "../images/slide20.2.png"
     ]
   },
   "slide_21": {
@@ -673,9 +619,6 @@
           "A less-lethal device shall not be directed against a person who is situated on an elevated surface unless reasonable efforts have been made to prevent or minimize a fall-related injury"
         ]
       }
-    ],
-    "images": [
-      "../images/slide21.png"
     ]
   },
   "slide_22": {
@@ -729,9 +672,6 @@
           "Unusual calmness after restraint"
         ]
       }
-    ],
-    "images": [
-      "../images/slide22.png"
     ]
   },
   "slide_23": {
@@ -762,9 +702,6 @@
         "type": "paragraph",
         "content": "Remember: The force continuum is not a rigid, step-by-step progression. Officers may need to immediately employ a higher level of force based on the totality of circumstances, including the immediacy and severity of the threat."
       }
-    ],
-    "images": [
-      "../images/slide23.png"
     ]
   },
   "slide_24": {
@@ -806,9 +743,6 @@
         "type": "paragraph",
         "content": "Critical Distinction: Understanding the difference between bodily injury and serious bodily injury helps officers make appropriate decisions about the level of force that is reasonable, necessary, and proportional in a given situation."
       }
-    ],
-    "images": [
-      "../images/slide24.png"
     ]
   },
   "slide_25": {
@@ -838,9 +772,6 @@
           "Reasonable Belief: The officer's assessment of imminent danger must be based on a reasonable belief, which is an objective assessment based upon an evaluation of how a reasonable officer with comparable training and experience would react to, or draw inferences from, the facts and circumstances confronting and known by the officer at the scene."
         ]
       }
-    ],
-    "images": [
-      "../images/slide25.png"
     ]
   },
   "slide_26": {
@@ -882,9 +813,6 @@
         "type": "paragraph",
         "content": "Remember: Officers shall use the least amount of force that is objectively reasonable, necessary, and proportional to safely achieve the legitimate law enforcement objective under the circumstances."
       }
-    ],
-    "images": [
-      "../images/slide26.png"
     ]
   },
   "slide_27": {
@@ -924,9 +852,6 @@
         "type": "paragraph",
         "content": "Important Note: The reasonable belief standard recognizes that law enforcement officers are often forced to make split-second judgments in circumstances that are tense, uncertain, and rapidly evolving. The assessment of reasonableness must allow for the fact that police officers are often forced to make difficult decisions with limited information in dangerous situations."
       }
-    ],
-    "images": [
-      "../images/slide27.png"
     ]
   },
   "slide_28": {
@@ -977,9 +902,6 @@
         "type": "paragraph",
         "content": "Critical Warning: Under no circumstances shall an officer use a chokehold, or any lesser contact with the neck area, in order to prevent the destruction of evidence by ingestion."
       }
-    ],
-    "images": [
-      "../images/slide28.png"
     ]
   },
   "slide_29": {
@@ -1017,9 +939,6 @@
         "type": "paragraph",
         "content": "Important Note: Force may be used against specific individuals in a crowd for lawful purposes in accordance with the other provisions of the Use of Force Policy. The focus should always be on addressing specific unlawful behavior rather than taking action against an entire crowd."
       }
-    ],
-    "images": [
-      "../images/slide29.png"
     ]
   },
   "slide_30": {
@@ -1060,9 +979,6 @@
         "type": "paragraph",
         "content": "Next Module: Module 3 will cover Procedures and Techniques, including de-escalation techniques, critical decision-making, force continuum application, and special considerations for subjects with mental health issues or other conditions affecting compliance."
       }
-    ],
-    "images": [
-      "../images/slide30.png"
     ]
   },
   "slide_31": {
@@ -1081,9 +997,6 @@
           "Force continuum implementation"
         ]
       }
-    ],
-    "images": [
-      "../images/slide31.png"
     ]
   },
   "slide_32": {
@@ -1120,9 +1033,6 @@
         "type": "paragraph",
         "content": "Remember: Officers should not default to attempting to resolve the incident immediately if slowing down the pace is viable and can be accomplished without creating an immediate threat to the public or placing officers in unreasonable danger."
       }
-    ],
-    "images": [
-      "../images/slide32.png"
     ]
   },
   "slide_33": {
@@ -1160,11 +1070,8 @@
       },
       {
         "type": "paragraph",
-        "content": "Remember: The CDM is not linear\u2014it's a continuous process. Officers should constantly reassess as new information becomes available and conditions change. The core values of ethics, professionalism, and the sanctity of human life should guide every decision."
+        "content": "Remember: The CDM is not linear—it's a continuous process. Officers should constantly reassess as new information becomes available and conditions change. The core values of ethics, professionalism, and the sanctity of human life should guide every decision."
       }
-    ],
-    "images": [
-      "../images/slide33.png"
     ]
   },
   "slide_34": {
@@ -1196,18 +1103,15 @@
         "items": [
           "Initial Assessment: Subject is a passive resistor (refusing commands but not physically resisting)",
           "Appropriate Response: Verbal commands, explanation of legal requirements, clear consequences of non-compliance",
-          "Scenario Evolution 1: Subject complies after explanation \u2192 De-escalate to cooperative person level",
-          "Scenario Evolution 2: Subject exits vehicle and attempts to walk away \u2192 Escalate to active resistor response (control holds)",
-          "Scenario Evolution 3: Subject becomes compliant after being detained \u2192 De-escalate force while maintaining control"
+          "Scenario Evolution 1: Subject complies after explanation → De-escalate to cooperative person level",
+          "Scenario Evolution 2: Subject exits vehicle and attempts to walk away → Escalate to active resistor response (control holds)",
+          "Scenario Evolution 3: Subject becomes compliant after being detained → De-escalate force while maintaining control"
         ]
       },
       {
         "type": "paragraph",
         "content": "Remember: The force continuum is not a rigid, step-by-step progression. It is a flexible framework that guides decision-making based on the totality of circumstances. Officers must continuously assess and adjust their force response as the situation evolves."
       }
-    ],
-    "images": [
-      "../images/slide34.png"
     ]
   },
   "slide_35": {
@@ -1263,9 +1167,6 @@
         "type": "paragraph",
         "content": "Remember: The goal in mental health crisis situations is to resolve the encounter safely for all involved, connect the person with appropriate resources, and avoid unnecessary use of force or criminal charges when possible. Mental illness is a medical condition, not a crime."
       }
-    ],
-    "images": [
-      "../images/slide35.png"
     ]
   },
   "slide_36": {
@@ -1327,10 +1228,6 @@
         "type": "paragraph",
         "content": "Verbal communication techniques that are designed to avoid or minimize the use of force."
       }
-    ],
-    "images": [
-      "../images/slide36.png",
-      "../images/slide36.2.png"
     ]
   },
   "slide_37": {
@@ -1388,9 +1285,6 @@
         "type": "paragraph",
         "content": "Important: The application of any pain compliance technique shall be immediately discontinued once the officer determines that compliance has been achieved or other more appropriate alternatives can be reasonably utilized. Always be alert to the risks of positional asphyxiation during and after the application of control techniques."
       }
-    ],
-    "images": [
-      "../images/slide37.png"
     ]
   },
   "slide_38": {
@@ -1443,9 +1337,6 @@
         "type": "paragraph",
         "content": "Next Module: Module 4 will cover Specific Force Options, including detailed information on Conducted Energy Devices (CEDs), less-lethal devices, deadly force requirements, and prohibited uses of force."
       }
-    ],
-    "images": [
-      "../images/slide38.png"
     ]
   },
   "slide_39": {
@@ -1464,9 +1355,6 @@
           "OC spray and chemical agents"
         ]
       }
-    ],
-    "images": [
-      "../images/slide39.png"
     ]
   },
   "slide_40": {
@@ -1527,9 +1415,6 @@
         "type": "paragraph",
         "content": "Remember: CEDs are enhanced mechanical force options that should only be used when necessary and justified. Officers shall reevaluate the situation and reassess the need to use force before any second or subsequent firing or discharge against the same person."
       }
-    ],
-    "images": [
-      "../images/slide40.png"
     ]
   },
   "slide_41": {
@@ -1581,9 +1466,6 @@
         "type": "paragraph",
         "content": "Critical Reminder: Deadly force is an absolute last resort. Officers must exhaust all other reasonable means before resorting to deadly force. The decision to use deadly force must be based on the facts and circumstances known to the officer at the time, not on information learned later."
       }
-    ],
-    "images": [
-      "../images/slide41.png"
     ]
   },
   "slide_42": {
@@ -1646,9 +1528,6 @@
         "type": "paragraph",
         "content": "Remember: Less-lethal does not mean non-lethal. These devices can cause serious injury or death if improperly used. Officers must be properly trained, follow manufacturer guidelines, and continuously reassess the situation during deployment."
       }
-    ],
-    "images": [
-      "../images/slide42.png"
     ]
   },
   "slide_43": {
@@ -1709,9 +1588,6 @@
         "type": "paragraph",
         "content": "Remember: Once resistance ceases, the further application of OC shall cease. Officers shall remain alert for medical problems or difficulty that the exposed subject may experience and monitor for positional asphyxiation."
       }
-    ],
-    "images": [
-      "../images/slide43.png"
     ]
   },
   "slide_44": {
@@ -1768,9 +1644,6 @@
         "type": "paragraph",
         "content": "Remember: Impact weapons are defensive tools. The primary goal is to gain control with minimal injury. Once control is achieved, the use of impact weapons must cease immediately."
       }
-    ],
-    "images": [
-      "../images/slide44.png"
     ]
   },
   "slide_45": {
@@ -1827,9 +1700,6 @@
         "type": "paragraph",
         "content": "Critical Reminder: The prohibitions outlined in this policy are not exhaustive. Officers must always use sound judgment and ensure that any force used is objectively reasonable, necessary, and proportional to the threat or resistance encountered."
       }
-    ],
-    "images": [
-      "../images/slide45.png"
     ]
   },
   "slide_46": {
@@ -1884,9 +1754,6 @@
         "type": "paragraph",
         "content": "Next Module: Module 5 will cover Post-Incident Procedures, including reporting requirements, medical aid, supervisor responsibilities, and administrative review processes."
       }
-    ],
-    "images": [
-      "../images/slide46.png"
     ]
   },
   "slide_47": {
@@ -1905,9 +1772,6 @@
           "Documentation standards"
         ]
       }
-    ],
-    "images": [
-      "../images/slide47.png"
     ]
   },
   "slide_48": {
@@ -1965,9 +1829,6 @@
         "type": "paragraph",
         "content": "Remember: The duty to render medical assistance is a core principle of the Cape May Police Department's Use of Force policy. Providing prompt and appropriate medical care after a use of force incident is not only a legal and ethical obligation but also helps build trust with the community."
       }
-    ],
-    "images": [
-      "../images/slide48.png"
     ]
   },
   "slide_49": {
@@ -2024,9 +1885,6 @@
         "type": "paragraph",
         "content": "Remember: Thorough and accurate reporting is essential for transparency, accountability, and continuous improvement. Reports should be completed promptly and should contain all relevant details about the use of force incident."
       }
-    ],
-    "images": [
-      "../images/slide49.png"
     ]
   }
 }

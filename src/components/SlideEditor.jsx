@@ -42,6 +42,7 @@ export default function SlideEditor() {
   const [hasChanges, setHasChanges] = useState(false)
   const [saving, setSaving] = useState(false)
   const [saveStatus, setSaveStatus] = useState(null)
+  const [uploadingImage, setUploadingImage] = useState(false)
 
   const moduleId = searchParams.get('module')
   const availableSlides = moduleId 
@@ -146,6 +147,55 @@ export default function SlideEditor() {
     const newSlideId = availableSlides[newIndex].id
     setCurrentSlideId(newSlideId)
     navigate(`/admin/slides/${newSlideId}${moduleId ? `?module=${moduleId}` : ''}`)
+  }
+
+  // Handle image upload
+  const handleImageUpload = (e) => {
+    if (!hasPermission('write')) return
+    
+    const file = e.target.files[0]
+    if (!file) return
+    
+    // Check file type
+    if (!['image/jpeg', 'image/png'].includes(file.type)) {
+      alert('Only JPEG and PNG images are supported')
+      return
+    }
+    
+    setUploadingImage(true)
+    
+    const reader = new FileReader()
+    reader.onload = (event) => {
+      const imageDataUrl = event.target.result
+      
+      // Add the new image to the slide data
+      const newImages = [...(slideData.images || []), imageDataUrl]
+      const newData = { ...slideData, images: newImages }
+      setSlideData(newData)
+      setHasChanges(true)
+      setUploadingImage(false)
+      
+      // Reset the file input
+      e.target.value = null
+    }
+    
+    reader.onerror = () => {
+      alert('Failed to read the image file')
+      setUploadingImage(false)
+      e.target.value = null
+    }
+    
+    reader.readAsDataURL(file)
+  }
+  
+  // Remove image from slide
+  const removeImage = (index) => {
+    if (!hasPermission('write')) return
+    
+    const newImages = slideData.images.filter((_, i) => i !== index)
+    const newData = { ...slideData, images: newImages }
+    setSlideData(newData)
+    setHasChanges(true)
   }
 
   if (!slideData) {
@@ -346,6 +396,73 @@ export default function SlideEditor() {
                 )}
               </CardContent>
             </Card>
+
+            {/* Image Upload Section */}
+            <Card>
+              <CardHeader>
+                <div className="flex justify-between items-center">
+                  <CardTitle>Visual References</CardTitle>
+                  {hasPermission('write') && (
+                    <Button
+                      size="sm"
+                      onClick={() => document.getElementById('image-upload').click()}
+                    >
+                      <Plus className="h-4 w-4 mr-2" />
+                      Add Image
+                    </Button>
+                  )}
+                </div>
+                <CardDescription>
+                  Upload JPEG or PNG images to include in the slide
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <input
+                  type="file"
+                  id="image-upload"
+                  accept="image/jpeg, image/png"
+                  className="hidden"
+                  onChange={handleImageUpload}
+                  disabled={!hasPermission('write')}
+                />
+                
+                {slideData.images && slideData.images.length > 0 ? (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {slideData.images.map((image, index) => (
+                      <div key={index} className="relative border rounded-lg p-2">
+                        {image.startsWith('data:image/') ? (
+                          <img
+                            src={image}
+                            alt={`Image ${index + 1}`}
+                            className="w-full h-auto rounded"
+                          />
+                        ) : (
+                          <div className="bg-gray-100 p-4 text-center rounded">
+                            <p className="text-sm text-gray-600">{image}</p>
+                          </div>
+                        )}
+                        
+                        {hasPermission('write') && (
+                          <Button
+                            size="sm"
+                            variant="destructive"
+                            className="absolute top-2 right-2"
+                            onClick={() => removeImage(index)}
+                          >
+                            <Trash2 className="h-4 w-4" />
+                          </Button>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-center py-8 text-gray-500 border border-dashed rounded-lg">
+                    <p>No images uploaded. Click "Add Image" to upload.</p>
+                    <p className="text-xs mt-2">Supported formats: JPEG, PNG</p>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
           </div>
 
           {/* Preview Panel */}
@@ -406,6 +523,30 @@ export default function SlideEditor() {
                       </div>
                     ))}
                   </div>
+                  
+                  {/* Preview of Images */}
+                  {slideData.images && slideData.images.length > 0 && (
+                    <div className="mt-6">
+                      <h4 className="font-medium text-gray-900 mb-2">Visual References</h4>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        {slideData.images.map((image, index) => (
+                          <div key={index} className="border rounded p-2">
+                            {image.startsWith('data:image/') ? (
+                              <img
+                                src={image}
+                                alt={`Preview ${index + 1}`}
+                                className="w-full h-auto rounded"
+                              />
+                            ) : (
+                              <div className="bg-gray-100 p-2 text-center rounded">
+                                <p className="text-xs text-gray-600">{image}</p>
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>

@@ -74,7 +74,7 @@ export function ContentProvider({ children }) {
           id: slideId,
           title: data.title || `Slide ${slideId}`,
           content: data.textContent || [],
-          images: data.images || [],
+          images: data.images || undefined,
           module_id: moduleId
         }
       })
@@ -156,7 +156,7 @@ export function ContentProvider({ children }) {
           id: slideId,
           title: contentMapping[localKey].title || `Slide ${slideId}`,
           textContent: contentMapping[localKey].textContent || [],
-          images: contentMapping[localKey].images || []
+          images: contentMapping[localKey].images || undefined
         }
       }
       return null

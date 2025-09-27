@@ -222,19 +222,45 @@ export default function PresentationView() {
               )}
             </div>
 
-            {/* Slide Images */}
-            {slideData.images && slideData.images.length > 0 && (
+            {/* Completely remove Visual References section for all slides */}
+            {false && (
               <div className="mb-8">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Visual References</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {slideData.images.map((image, index) => (
-                    <div key={index} className="bg-gray-100 rounded-lg p-4 text-center">
-                      <p className="text-sm text-gray-600">Image: {image}</p>
-                      <p className="text-xs text-gray-500 mt-1">
-                        (Image display would be implemented with proper image loading)
-                      </p>
-                    </div>
-                  ))}
+                  {slideData.images
+                    .filter(image =>
+                      image &&
+                      typeof image === 'string' &&
+                      image.trim() !== '' &&
+                      (image.startsWith('data:image/') || image.match(/\.(jpeg|jpg|png|gif|webp)$/i))
+                    )
+                    .map((image, index) => {
+                      // For data URLs, use them directly
+                      // For relative paths, keep them as is since they're referenced correctly in the public directory
+                      const imageSrc = image;
+                      
+                      return (
+                        <div key={index} className="bg-gray-100 rounded-lg p-4 text-center">
+                          {image.startsWith('data:image/') ? (
+                            // For base64 data URLs
+                            <img
+                              src={imageSrc}
+                              alt={`Visual reference ${index + 1}`}
+                              className="max-w-full h-auto mx-auto rounded"
+                            />
+                          ) : (
+                            // For file paths
+                            <div>
+                              <p className="text-sm text-gray-600">Image: {image}</p>
+                              <p className="text-xs text-gray-500 mt-1">
+                                (Image path reference)
+                              </p>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })
+                  }
                 </div>
               </div>
             )}
