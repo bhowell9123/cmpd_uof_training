@@ -63,6 +63,24 @@ export function ContentProvider({ children }) {
     }
   }, [isAuthenticated])
 
+  // Force reload content when auth state changes
+  useEffect(() => {
+    // This will ensure content is reloaded after login/logout
+    const handleStorageChange = (e) => {
+      if (e.key === 'auth_token') {
+        console.log('[ContentContext] Auth token changed, reloading content...')
+        if (isAuthenticated) {
+          loadContent()
+        } else {
+          loadLocalContent()
+        }
+      }
+    }
+
+    window.addEventListener('storage', handleStorageChange)
+    return () => window.removeEventListener('storage', handleStorageChange)
+  }, [isAuthenticated])
+
   const loadLocalContent = () => {
     try {
       console.log('Loading content from local file...')
@@ -96,24 +114,32 @@ export function ContentProvider({ children }) {
       setLoading(true)
       setError(null)
       
+      // Add timestamp to prevent caching
+      const timestamp = new Date().getTime()
       let response;
       
       // If authenticated, try the database endpoint first
       if (isAuthenticated) {
         console.log('[ContentContext] User is authenticated, trying database endpoint first...')
-        response = await fetch('/api/slides', {
+        response = await fetch(`/api/slides?t=${timestamp}`, {
           headers: {
             ...getAuthHeaders(),
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
           }
         })
         
         // If database endpoint fails, fall back to simple endpoint
         if (!response.ok) {
           console.log('[ContentContext] Database endpoint failed, falling back to simple endpoint...')
-          response = await fetch('/api/slides-simple', {
+          response = await fetch(`/api/slides-simple?t=${timestamp}`, {
             headers: {
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
+              'Cache-Control': 'no-cache, no-store, must-revalidate',
+              'Pragma': 'no-cache',
+              'Expires': '0'
             }
           })
         } else {
@@ -122,9 +148,12 @@ export function ContentProvider({ children }) {
       } else {
         // For unauthenticated users, use the simple endpoint
         console.log('[ContentContext] User is not authenticated, using simple endpoint...')
-        response = await fetch('/api/slides-simple', {
+        response = await fetch(`/api/slides-simple?t=${timestamp}`, {
           headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
           }
         })
       }
@@ -258,11 +287,16 @@ export function ContentProvider({ children }) {
 
     try {
       console.log('[ContentContext] Using API data, sending PUT request to update slide in database')
-      const response = await fetch(`/api/slides/${slideId}`, {
+      // Add timestamp to prevent caching
+      const timestamp = new Date().getTime()
+      const response = await fetch(`/api/slides/${slideId}?t=${timestamp}`, {
         method: 'PUT',
         headers: {
           ...getAuthHeaders(),
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache',
+          'Expires': '0'
         },
         body: JSON.stringify({
           title: slideData.title,
