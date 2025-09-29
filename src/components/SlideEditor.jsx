@@ -27,13 +27,14 @@ export default function SlideEditor() {
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
   const { hasPermission } = useAuth()
-  const { 
-    getSlide, 
-    updateSlide, 
-    getAllSlides, 
-    getSlidesByModule, 
+  const {
+    getSlide,
+    updateSlide,
+    deleteSlide,
+    getAllSlides,
+    getSlidesByModule,
     discardChanges,
-    modules 
+    modules
   } = useContent()
 
   const [currentSlideId, setCurrentSlideId] = useState(slideId ? parseInt(slideId) : 1)
@@ -43,6 +44,7 @@ export default function SlideEditor() {
   const [saving, setSaving] = useState(false)
   const [saveStatus, setSaveStatus] = useState(null)
   const [uploadingImage, setUploadingImage] = useState(false)
+  const [deleting, setDeleting] = useState(false)
 
   const moduleId = searchParams.get('module')
   const availableSlides = moduleId 
@@ -139,6 +141,51 @@ export default function SlideEditor() {
       setTimeout(() => setSaveStatus(null), 3000)
     } finally {
       setSaving(false)
+    }
+  }
+
+  const handleDelete = async () => {
+    if (!hasPermission('write')) {
+      console.log(`[SlideEditor] Delete skipped - no write permission`)
+      return
+    }
+
+    // Confirm deletion with the user
+    if (!window.confirm(`Are you sure you want to delete slide ${currentSlideId}? This action cannot be undone.`)) {
+      return
+    }
+
+    console.log(`[SlideEditor] Deleting slide ${currentSlideId}`)
+    setDeleting(true)
+    try {
+      const success = await deleteSlide(currentSlideId)
+      if (success) {
+        console.log(`[SlideEditor] Slide ${currentSlideId} deleted successfully`)
+        // Navigate to the previous slide or to the dashboard if no slides left
+        const availableSlideIds = availableSlides.map(slide => slide.id)
+        const currentIndex = availableSlideIds.indexOf(currentSlideId)
+        
+        if (availableSlideIds.length <= 1) {
+          // If this was the last slide, go back to dashboard
+          navigate('/admin')
+        } else if (currentIndex > 0) {
+          // Navigate to the previous slide
+          const prevSlideId = availableSlideIds[currentIndex - 1]
+          navigate(`/admin/slides/${prevSlideId}${moduleId ? `?module=${moduleId}` : ''}`)
+        } else {
+          // Navigate to the next slide
+          const nextSlideId = availableSlideIds[currentIndex + 1]
+          navigate(`/admin/slides/${nextSlideId}${moduleId ? `?module=${moduleId}` : ''}`)
+        }
+      } else {
+        console.error(`[SlideEditor] Failed to delete slide ${currentSlideId}`)
+        alert('Failed to delete slide. Please try again.')
+      }
+    } catch (error) {
+      console.error(`[SlideEditor] Error deleting slide ${currentSlideId}:`, error)
+      alert(`Error deleting slide: ${error.message}`)
+    } finally {
+      setDeleting(false)
     }
   }
 
@@ -288,6 +335,21 @@ export default function SlideEditor() {
                   >
                     <Undo className="h-4 w-4 mr-2" />
                     Discard
+                  </Button>
+                  
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleDelete}
+                    disabled={deleting}
+                    className="bg-red-50 text-red-600 hover:bg-red-100 hover:text-red-700"
+                  >
+                    {deleting ? (
+                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-red-600 mr-2"></div>
+                    ) : (
+                      <Trash2 className="h-4 w-4 mr-2" />
+                    )}
+                    Delete Slide
                   </Button>
                   
                   <Button

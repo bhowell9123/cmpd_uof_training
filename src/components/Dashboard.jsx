@@ -5,25 +5,34 @@ import { useContent } from '../contexts/ContentContext'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Shield, 
-  FileText, 
-  Users, 
-  Settings, 
-  LogOut, 
-  Edit3, 
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import {
+  Shield,
+  FileText,
+  Users,
+  Settings,
+  LogOut,
+  Edit3,
   Eye,
   Save,
   AlertCircle,
   BookOpen,
-  BarChart3
+  BarChart3,
+  Plus
 } from 'lucide-react'
 
 export default function Dashboard() {
   const { user, logout, hasPermission } = useAuth()
-  const { modules, slides, loading, error, getUnsavedChangesCount } = useContent()
+  const { modules, slides, loading, error, getUnsavedChangesCount, createSlide } = useContent()
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState('overview')
+  const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false)
+  const [newSlideTitle, setNewSlideTitle] = useState('')
+  const [selectedModuleId, setSelectedModuleId] = useState('')
+  const [isCreating, setIsCreating] = useState(false)
 
   const handleLogout = () => {
     logout()
@@ -31,6 +40,39 @@ export default function Dashboard() {
   }
 
   const unsavedChanges = getUnsavedChangesCount()
+
+  const handleCreateSlide = async () => {
+    if (!newSlideTitle || !selectedModuleId) {
+      alert('Please provide a title and select a module')
+      return
+    }
+
+    setIsCreating(true)
+    try {
+      const moduleId = parseInt(selectedModuleId)
+      const newSlide = await createSlide({
+        title: newSlideTitle,
+        textContent: [],
+        images: [],
+        moduleId
+      })
+
+      if (newSlide) {
+        setIsCreateDialogOpen(false)
+        setNewSlideTitle('')
+        setSelectedModuleId('')
+        // Navigate to the new slide
+        navigate(`/admin/slides/${newSlide.id}`)
+      } else {
+        alert('Failed to create slide. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error creating slide:', error)
+      alert(`Error creating slide: ${error.message}`)
+    } finally {
+      setIsCreating(false)
+    }
+  }
 
   const stats = {
     totalSlides: slides.length,
@@ -237,10 +279,74 @@ export default function Dashboard() {
           <div className="space-y-6">
             <div className="flex justify-between items-center">
               <h2 className="text-2xl font-bold text-gray-900">Content Management</h2>
-              <Button onClick={() => navigate('/admin/slides')}>
-                <Edit3 className="h-4 w-4 mr-2" />
-                Edit Slides
-              </Button>
+              <div className="flex space-x-2">
+                {hasPermission('write') && (
+                  <Dialog open={isCreateDialogOpen} onOpenChange={setIsCreateDialogOpen}>
+                    <DialogTrigger asChild>
+                      <Button variant="outline">
+                        <Plus className="h-4 w-4 mr-2" />
+                        Create New Slide
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent>
+                      <DialogHeader>
+                        <DialogTitle>Create New Slide</DialogTitle>
+                        <DialogDescription>
+                          Add a new slide to the training content. The slide will be created with the provided title and can be edited afterward.
+                        </DialogDescription>
+                      </DialogHeader>
+                      <div className="grid gap-4 py-4">
+                        <div className="grid grid-cols-4 items-center gap-4">
+                          <Label htmlFor="title" className="text-right">
+                            Title
+                          </Label>
+                          <Input
+                            id="title"
+                            value={newSlideTitle}
+                            onChange={(e) => setNewSlideTitle(e.target.value)}
+                            className="col-span-3"
+                            placeholder="Enter slide title"
+                          />
+                        </div>
+                        <div className="grid grid-cols-4 items-center gap-4">
+                          <Label htmlFor="module" className="text-right">
+                            Module
+                          </Label>
+                          <Select value={selectedModuleId} onValueChange={setSelectedModuleId}>
+                            <SelectTrigger className="col-span-3">
+                              <SelectValue placeholder="Select a module" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              {modules.map((module) => (
+                                <SelectItem key={module.id} value={module.id.toString()}>
+                                  Module {module.id}: {module.name}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                        </div>
+                      </div>
+                      <DialogFooter>
+                        <Button variant="outline" onClick={() => setIsCreateDialogOpen(false)}>
+                          Cancel
+                        </Button>
+                        <Button onClick={handleCreateSlide} disabled={isCreating}>
+                          {isCreating ? (
+                            <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                          ) : (
+                            <Plus className="h-4 w-4 mr-2" />
+                          )}
+                          Create Slide
+                        </Button>
+                      </DialogFooter>
+                    </DialogContent>
+                  </Dialog>
+                )}
+                <Button onClick={() => navigate('/admin/slides')}>
+                  <Edit3 className="h-4 w-4 mr-2" />
+                  Edit Slides
+                </Button>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

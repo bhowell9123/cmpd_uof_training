@@ -345,6 +345,114 @@ export function ContentProvider({ children }) {
     return 0
   }
 
+  // Delete a slide
+  const deleteSlide = async (slideId) => {
+    console.log(`[ContentContext] Deleting slide ${slideId}, useLocalData: ${useLocalData}`)
+    
+    // If using local data, just update in memory
+    if (useLocalData) {
+      console.log('[ContentContext] Using local data, updating in memory only')
+      setSlides(prevSlides => prevSlides.filter(slide => slide.id !== slideId))
+      return true
+    }
+
+    try {
+      console.log('[ContentContext] Using API data, sending DELETE request to delete slide in database')
+      // Add timestamp to prevent caching
+      const timestamp = new Date().getTime()
+      const response = await fetch(`/api/slides/${slideId}?t=${timestamp}`, {
+        method: 'DELETE',
+        headers: {
+          ...getAuthHeaders(),
+          'Content-Type': 'application/json',
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache',
+          'Expires': '0'
+        }
+      })
+
+      if (response.ok) {
+        console.log('[ContentContext] Slide deleted successfully from database')
+        
+        // Update local state
+        setSlides(prevSlides => prevSlides.filter(slide => slide.id !== slideId))
+        return true
+      } else {
+        const errorData = await response.json()
+        console.error('[ContentContext] Failed to delete slide from database:', errorData.error)
+        throw new Error(errorData.error || 'Failed to delete slide')
+      }
+    } catch (err) {
+      console.error('Error deleting slide:', err)
+      setError(err.message)
+      return false
+    }
+  }
+
+  // Create a new slide
+  const createSlide = async (slideData) => {
+    console.log(`[ContentContext] Creating new slide, useLocalData: ${useLocalData}`)
+    
+    // If using local data, just update in memory
+    if (useLocalData) {
+      console.log('[ContentContext] Using local data, updating in memory only')
+      
+      // Find the highest slide ID to determine the next ID
+      const maxId = Math.max(...slides.map(slide => slide.id), 0)
+      const newSlideId = maxId + 1
+      
+      const newSlide = {
+        id: newSlideId,
+        title: slideData.title,
+        content: slideData.textContent || [],
+        images: slideData.images || [],
+        module_id: slideData.moduleId
+      }
+      
+      setSlides(prevSlides => [...prevSlides, newSlide])
+      return newSlide
+    }
+
+    try {
+      console.log('[ContentContext] Using API data, sending POST request to create slide in database')
+      // Add timestamp to prevent caching
+      const timestamp = new Date().getTime()
+      const response = await fetch(`/api/slides?t=${timestamp}`, {
+        method: 'POST',
+        headers: {
+          ...getAuthHeaders(),
+          'Content-Type': 'application/json',
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache',
+          'Expires': '0'
+        },
+        body: JSON.stringify({
+          title: slideData.title,
+          content: slideData.textContent || [],
+          images: slideData.images || [],
+          moduleId: slideData.moduleId
+        })
+      })
+
+      if (response.ok) {
+        const data = await response.json()
+        console.log('[ContentContext] Slide created successfully in database')
+        
+        // Update local state
+        setSlides(prevSlides => [...prevSlides, data.slide])
+        return data.slide
+      } else {
+        const errorData = await response.json()
+        console.error('[ContentContext] Failed to create slide in database:', errorData.error)
+        throw new Error(errorData.error || 'Failed to create slide')
+      }
+    } catch (err) {
+      console.error('Error creating slide:', err)
+      setError(err.message)
+      return null
+    }
+  }
+
   const value = {
     slides: getAllSlides(),
     modules,
@@ -354,6 +462,8 @@ export function ContentProvider({ children }) {
     getAllSlides,
     getSlidesByModule,
     updateSlide,
+    deleteSlide,
+    createSlide,
     discardChanges,
     getUnsavedChangesCount,
     refreshContent: isAuthenticated ? loadContent : loadLocalContent,

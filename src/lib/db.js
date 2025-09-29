@@ -272,6 +272,77 @@ export async function updateSlide(slideId, title, content, images, userId) {
   }
 }
 
+// Delete a slide
+export async function deleteSlide(slideId, userId) {
+  console.log(`[DB] Deleting slide ${slideId}, requested by userId: ${userId}`)
+  
+  try {
+    // First, get the slide to make sure it exists
+    const slide = await getSlideById(slideId)
+    if (!slide) {
+      console.log(`[DB] Slide ${slideId} not found, cannot delete`)
+      return false
+    }
+    
+    // Delete the slide
+    const result = await sql`
+      DELETE FROM slides
+      WHERE id = ${slideId}
+      RETURNING id
+    `
+    
+    console.log(`[DB] Slide deletion result:`, result.rows[0] ? `Success, deleted slide ${slideId}` : 'No slide deleted')
+    
+    // Log the deletion action
+    if (result.rows.length > 0) {
+      await logAuditAction(userId, slideId, 'delete_slide', {
+        slideId,
+        title: slide.title
+      })
+      return true
+    }
+    
+    return false
+  } catch (error) {
+    console.error('Error deleting slide:', error)
+    return false
+  }
+}
+
+// Create a new slide
+export async function createSlide(title, content, images, moduleId, userId) {
+  console.log(`[DB] Creating new slide with title: ${title}, moduleId: ${moduleId}, userId: ${userId}`)
+  
+  try {
+    // Find the highest slide ID to determine the next ID
+    const maxIdResult = await sql`SELECT MAX(id) FROM slides`
+    const nextId = maxIdResult.rows[0].max ? parseInt(maxIdResult.rows[0].max) + 1 : 1
+    
+    // Create the new slide
+    const result = await sql`
+      INSERT INTO slides (id, title, content, images, module_id, updated_by)
+      VALUES (${nextId}, ${title}, ${JSON.stringify(content || [])}, ${images || []}, ${moduleId}, ${userId})
+      RETURNING *
+    `
+    
+    console.log(`[DB] Slide creation result:`, result.rows[0] ? `Success, created slide ${nextId}` : 'No slide created')
+    
+    // Log the creation action
+    if (result.rows.length > 0) {
+      await logAuditAction(userId, nextId, 'create_slide', {
+        title,
+        moduleId
+      })
+      return result.rows[0]
+    }
+    
+    return null
+  } catch (error) {
+    console.error('Error creating slide:', error)
+    return null
+  }
+}
+
 // Module management functions
 export async function getAllModules() {
   try {

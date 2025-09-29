@@ -1,5 +1,5 @@
 import { requirePermission } from '../../src/lib/auth.js'
-import { getSlideById, updateSlide } from '../../src/lib/db.js'
+import { getSlideById, updateSlide, deleteSlide } from '../../src/lib/db.js'
 
 async function getHandler(req, res) {
   try {
@@ -81,12 +81,51 @@ async function putHandler(req, res) {
   }
 }
 
+async function deleteHandler(req, res) {
+  console.log(`[API] DELETE request to delete slide ${req.query.id}`)
+  try {
+    const { id } = req.query
+    const slideId = parseInt(id)
+
+    console.log(`[API] Deleting slide ${slideId}`)
+    console.log(`[API] User ID: ${req.user.userId}`)
+
+    if (isNaN(slideId)) {
+      console.log(`[API] Invalid slide ID: ${id}`)
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0');
+      res.setHeader('X-Vercel-Cache-Control', 'no-store');
+      return res.status(400).json({ error: 'Invalid slide ID' });
+    }
+
+    const success = await deleteSlide(slideId, req.user.userId)
+
+    if (!success) {
+      console.log(`[API] Slide not found or delete failed: ${slideId}`)
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0');
+      res.setHeader('X-Vercel-Cache-Control', 'no-store');
+      return res.status(404).json({ error: 'Slide not found or could not be deleted' });
+    }
+
+    console.log(`[API] Slide ${slideId} deleted successfully`)
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0');
+    res.setHeader('X-Vercel-Cache-Control', 'no-store');
+    return res.status(200).json({ success: true, message: `Slide ${slideId} deleted successfully` });
+  } catch (error) {
+    console.error('Error deleting slide:', error)
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0');
+    res.setHeader('X-Vercel-Cache-Control', 'no-store');
+    res.status(500).json({ error: 'Internal server error' });
+  }
+}
+
 async function handler(req, res) {
   switch (req.method) {
     case 'GET':
       return getHandler(req, res)
     case 'PUT':
       return putHandler(req, res)
+    case 'DELETE':
+      return deleteHandler(req, res)
     default:
       res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0, s-maxage=0');
       res.setHeader('X-Vercel-Cache-Control', 'no-store');
