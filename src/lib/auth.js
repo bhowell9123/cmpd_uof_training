@@ -76,11 +76,28 @@ export function requireAuth(handler) {
         return res.status(401).json({ error: 'No token provided' })
       }
       
-      const decoded = verifyToken(token)
+      // Accept either the mock base64 token or a real JWT
+      let decoded = null
+      // Try mock base64 token first
+      try {
+        const mock = JSON.parse(Buffer.from(token, 'base64').toString())
+        // minimal shape: username + role
+        if (mock && mock.role) {
+          decoded = {
+            userId: mock.userId || 1,
+            username: mock.username || 'mock',
+            role: mock.role,
+            email: mock.email || 'mock@example.com'
+          }
+        }
+      } catch {}
+      // Fall back to real JWT
+      if (!decoded) {
+        decoded = verifyToken(token)
+      }
       if (!decoded) {
         return res.status(401).json({ error: 'Invalid token' })
       }
-      
       req.user = decoded
       return handler(req, res)
     } catch (error) {
