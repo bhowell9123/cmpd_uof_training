@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useContent } from '../contexts/ContentContext'
 import { Button } from '@/components/ui/button'
@@ -30,6 +30,7 @@ export default function PresentationView() {
     }
   }, [slideId])
 
+  // Define the navigation function
   const navigateToSlide = (direction) => {
     const currentIndex = allSlides.findIndex(slide => slide.id === currentSlideId)
     let newIndex
@@ -44,6 +45,33 @@ export default function PresentationView() {
     setCurrentSlideId(newSlideId)
     navigate(`/presentation/slide/${newSlideId}`)
   }
+  
+  // Add keyboard event listener for arrow key navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowRight') {
+        const currentIndex = allSlides.findIndex(slide => slide.id === currentSlideId)
+        const newIndex = currentIndex < allSlides.length - 1 ? currentIndex + 1 : 0
+        const newSlideId = allSlides[newIndex].id
+        setCurrentSlideId(newSlideId)
+        navigate(`/presentation/slide/${newSlideId}`)
+      } else if (e.key === 'ArrowLeft') {
+        const currentIndex = allSlides.findIndex(slide => slide.id === currentSlideId)
+        const newIndex = currentIndex > 0 ? currentIndex - 1 : allSlides.length - 1
+        const newSlideId = allSlides[newIndex].id
+        setCurrentSlideId(newSlideId)
+        navigate(`/presentation/slide/${newSlideId}`)
+      }
+    }
+    
+    // Add event listener
+    document.addEventListener('keydown', handleKeyDown)
+    
+    // Clean up event listener on component unmount
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [currentSlideId, allSlides, navigate])
 
   const getCurrentModule = () => {
     return modules.find(module => 
