@@ -12,7 +12,7 @@ export function useAuth() {
 
 export function AuthProvider({ children }) {
   // Development mode: Auto-login as admin for testing
-  const DEV_MODE = true
+  const DEV_MODE = false
   
   const [user, setUser] = useState(DEV_MODE ? {
     id: 1,
