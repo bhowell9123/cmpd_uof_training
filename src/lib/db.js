@@ -71,48 +71,84 @@ export async function initializeDatabase() {
 // Seed initial data
 export async function seedDatabase() {
   try {
-    // Check if users already exist
-    const existingUsers = await sql`SELECT COUNT(*) FROM users`
-    if (existingUsers.rows[0].count > 0) {
-      console.log('Database already seeded')
+    // Check if slides already exist
+    const existingSlides = await sql`SELECT COUNT(*) FROM slides`
+    if (existingSlides.rows[0].count > 49) {
+      console.log('Database already seeded with slides')
       return true
     }
+    
+    // Check if users already exist
+    const existingUsers = await sql`SELECT COUNT(*) FROM users`
+    const usersExist = existingUsers.rows[0].count > 0
 
-    // Create default users
-    const adminPassword = await bcrypt.hash('admin123', 10)
-    const editorPassword = await bcrypt.hash('editor123', 10)
-    const reviewerPassword = await bcrypt.hash('reviewer123', 10)
+    // Create default users if they don't exist
+    if (!usersExist) {
+      const adminPassword = await bcrypt.hash('admin123', 10)
+      const editorPassword = await bcrypt.hash('editor123', 10)
+      const reviewerPassword = await bcrypt.hash('reviewer123', 10)
 
-    await sql`
-      INSERT INTO users (username, email, password_hash, role, name) VALUES
-      ('admin', 'admin@capemaypd.gov', ${adminPassword}, 'super_admin', 'System Administrator'),
-      ('editor', 'editor@capemaypd.gov', ${editorPassword}, 'content_editor', 'Content Editor'),
-      ('reviewer', 'reviewer@capemaypd.gov', ${reviewerPassword}, 'content_reviewer', 'Content Reviewer')
-    `
-
-    // Insert modules
-    await sql`
-      INSERT INTO modules (id, name, description, slide_start, slide_end) VALUES
-      (1, 'Core Principles', 'Introduction to the core principles of use of force', 1, 15),
-      (2, 'Definitions and Classifications', 'Key definitions and classifications related to use of force', 16, 30),
-      (3, 'Procedures and Techniques', 'Practical procedures and techniques for use of force situations', 31, 38),
-      (4, 'Specific Force Options', 'Detailed information on specific force options available to officers', 39, 46),
-      (5, 'Post-Incident Procedures', 'Procedures to follow after a use of force incident', 47, 49)
-    `
-
-    // Insert slides from content mapping
-    for (const [slideKey, slideData] of Object.entries(contentMapping)) {
-      const slideId = parseInt(slideKey.replace('slide_', ''))
-      const moduleId = getModuleIdForSlide(slideId)
-      
       await sql`
-        INSERT INTO slides (id, title, content, images, module_id) VALUES
-        (${slideId}, ${slideData.title}, ${JSON.stringify(slideData.textContent)}, ${slideData.images || []}, ${moduleId})
+        INSERT INTO users (username, email, password_hash, role, name) VALUES
+        ('admin', 'admin@capemaypd.gov', ${adminPassword}, 'super_admin', 'System Administrator'),
+        ('editor', 'editor@capemaypd.gov', ${editorPassword}, 'content_editor', 'Content Editor'),
+        ('reviewer', 'reviewer@capemaypd.gov', ${reviewerPassword}, 'content_reviewer', 'Content Reviewer')
       `
+      console.log('Users created successfully')
+    } else {
+      console.log('Users already exist, skipping user creation')
     }
 
-    console.log('Database seeded successfully')
-    return true
+    // Check if modules already exist
+    const existingModules = await sql`SELECT COUNT(*) FROM modules`
+    if (existingModules.rows[0].count === 0) {
+      // Insert modules
+      await sql`
+        INSERT INTO modules (id, name, description, slide_start, slide_end) VALUES
+        (1, 'Core Principles', 'Introduction to the core principles of use of force', 1, 15),
+        (2, 'Definitions and Classifications', 'Key definitions and classifications related to use of force', 16, 30),
+        (3, 'Procedures and Techniques', 'Practical procedures and techniques for use of force situations', 31, 38),
+        (4, 'Specific Force Options', 'Detailed information on specific force options available to officers', 39, 46),
+        (5, 'Post-Incident Procedures', 'Procedures to follow after a use of force incident', 47, 49)
+      `
+      console.log('Modules created successfully')
+    } else {
+      console.log('Modules already exist, skipping module creation')
+    }
+
+    // Clear existing slides if any (to avoid conflicts)
+    if (existingSlides.rows[0].count > 0 && existingSlides.rows[0].count < 49) {
+      console.log(`Found ${existingSlides.rows[0].count} slides, clearing for fresh import`)
+      await sql`TRUNCATE TABLE slides RESTART IDENTITY CASCADE`
+    }
+
+    // Insert slides from content mapping
+    console.log('Starting slide import from content mapping...')
+    let slidesImported = 0;
+    
+    try {
+      for (const [slideKey, slideData] of Object.entries(contentMapping)) {
+        const slideId = parseInt(slideKey.replace('slide_', ''))
+        const moduleId = getModuleIdForSlide(slideId)
+        
+        try {
+          await sql`
+            INSERT INTO slides (id, title, content, images, module_id) VALUES
+            (${slideId}, ${slideData.title}, ${JSON.stringify(slideData.textContent)}, ${slideData.images || []}, ${moduleId})
+          `
+          slidesImported++;
+        } catch (slideError) {
+          console.error(`Error importing slide ${slideId}:`, slideError.message)
+        }
+      }
+      
+      console.log(`Successfully imported ${slidesImported} slides`)
+      console.log('Database seeded successfully')
+      return true
+    } catch (slidesError) {
+      console.error('Error during slides import:', slidesError)
+      return false
+    }
   } catch (error) {
     console.error('Error seeding database:', error)
     return false
